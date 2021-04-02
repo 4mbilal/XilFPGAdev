@@ -2,21 +2,15 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Fri Apr  2 15:03:27 2021
-# Process ID: 9228
+# Start of session at: Fri Apr  2 11:25:35 2021
+# Process ID: 2528
 # Current directory: D:/ZedboardMinimalSystemHardware
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7620 D:\ZedboardMinimalSystemHardware\ZedboardMinimalSystemHardware.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5616 D:\ZedboardMinimalSystemHardware\ZedboardMinimalSystemHardware.xpr
 # Log file: D:/ZedboardMinimalSystemHardware/vivado.log
 # Journal file: D:/ZedboardMinimalSystemHardware\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/ZedboardMinimalSystemHardware/ZedboardMinimalSystemHardware.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_run impl_1
+open_bd_design {D:/ZedboardMinimalSystemHardware/ZedboardMinimalSystemHardware.srcs/sources_1/bd/system/system.bd}
 write_hw_platform -fixed -include_bit -force -file D:/ZedboardMinimalSystemHardware/system_wrapper.xsa
