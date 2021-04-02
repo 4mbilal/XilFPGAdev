@@ -1,0 +1,15 @@
+1- Open Vivado 2020.2 and create a new ‘RTL’ project using the wizard. Select "Do not specify sources at this time". Select Zedboard as the board. 
+
+2- In the newly created project, click on ‘Flow’ and then "create new Block Design" with the name ‘system’. This will create an empty block.
+
+3- Click '+' sign to add IP. Select ZYNQ7 Processsing System. Click ‘Run Block Automation’. Press OK with default settings.
+
+4- Add an ‘AXI GPIO’ core. Select 'LEDs 8 bits' for 'Board Interface' (GPIO). Add another ‘AXI GPIO’ core and similarly attach it to switches (GPIO) and buttons (GPIO2). Run Connection automation and AXI interconnects + reset system etc. will appear automatically. 
+
+5- Validate design by right clicking on ‘system’ in block design pane. Validation successful message will appear. There should be no errors. 
+
+6- Go to sources tab in Block Design Window, right click on ‘system.bd’ and create HDL wrapper. Choose the ‘copy’ option so that it could be manually edited later on for further customization.
+
+7- Generate ‘bitstream’. This should take around 5 minutes. This minimal system takes only 1% LUT resources. Clocking requirements are met for 100 MHz system clock. Worst Negative Slack is +3.5 ns.
+
+8- Click File and then 'Export'. Select 'Export Hardware'. Select 'Include Bitstream'. Click 'Next' with default paths and names. Exported hardware file 'system_wrapper.xsa' will be generated at the default project path. 

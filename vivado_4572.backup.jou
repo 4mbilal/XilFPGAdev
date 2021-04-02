@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr  1 12:13:57 2021
+# Process ID: 4572
+# Current directory: D:/ZedboardMinimalSystemHardware
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5408 D:\ZedboardMinimalSystemHardware\ZedboardMinimalSystemHardware.xpr
+# Log file: D:/ZedboardMinimalSystemHardware/vivado.log
+# Journal file: D:/ZedboardMinimalSystemHardware\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/ZedboardMinimalSystemHardware/ZedboardMinimalSystemHardware.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/ZedboardMinimalSystemHardware/ZedboardMinimalSystemHardware.srcs/sources_1/bd/system/system.bd}
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+save_bd_design
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {2 374 280} [get_bd_cells axi_gpio_0]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {8} CONFIG.GPIO_BOARD_INTERFACE {leds_8bits} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+set_property location {2 410 482} [get_bd_cells axi_gpio_1]
+set_property location {1 440 275} [get_bd_cells axi_gpio_0]
+set_property location {1 439 448} [get_bd_cells axi_gpio_1]
+set_property -dict [list CONFIG.C_GPIO_WIDTH {5} CONFIG.C_GPIO2_WIDTH {8} CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_INPUTS {1} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.GPIO_BOARD_INTERFACE {btns_5bits} CONFIG.GPIO2_BOARD_INTERFACE {sws_8bits}] [get_bd_cells axi_gpio_1]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {leds_8bits ( LED ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {btns_5bits ( Push buttons ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sws_8bits ( DIP switches ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO2]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_1/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+endgroup
+validate_bd_design
+validate_bd_design -force
+make_wrapper -files [get_files D:/ZedboardMinimalSystemHardware/ZedboardMinimalSystemHardware.srcs/sources_1/bd/system/system.bd] -top
+import_files -force -norecurse d:/ZedboardMinimalSystemHardware/ZedboardMinimalSystemHardware.gen/sources_1/bd/system/hdl/system_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file D:/ZedboardMinimalSystemHardware/system_wrapper.xsa
+write_hw_platform -fixed -include_bit -force -file D:/ZedboardMinimalSystemHardware/system_wrapper.xsa
