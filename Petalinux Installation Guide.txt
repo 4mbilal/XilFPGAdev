@@ -1,0 +1,67 @@
+Install Ubuntu 18.04 (tested only on this version)
+
+Step 1: Install dependencies
+
+sudo apt-get -y install iproute2 \
+gcc \
+g++ \
+net-tools \
+libncurses5-dev \
+zlib1g:i386 \
+libssl-dev \
+flex \
+bison \
+libselinux1 \
+xterm \
+autoconf \
+libtool \
+texinfo \
+zlib1g-dev \
+gcc-multilib \
+build-essential \
+screen \
+pax \
+gawk \
+python3 \
+python3-pexpect \
+python3-pip \
+python3-git \
+python3-jinja2 \
+xz-utils \
+debianutils \
+iputils-ping \
+libegl1-mesa \
+libsdl1.2-dev \
+pylint3 \
+cpio
+
+Step 2:
+cd ~/petalinux
+chmod +x petalinux-v2020.2-final-installer.run
+mkdir -p petainstalldir
+~/petalinux/petalinux-v2020.2-final-installer.run -d ~/petalinux/petainstalldir
+
+The first thing that the PetaLinux installer will do is ask you to read and accept the license agreements (Xilinx End User License Agreement, Webtalk Terms and Conditions, Third Party End User License Agreement). For each agreement, use PgUp/PgDn to read through the agreement, then press q to close the agreement, then press y to accept the agreement.
+
+This should install the petalinux without any troubles.
+
+Step 3:
+PetaLinux tools require that your host system /bin/sh be bash, which in Ubuntu it is dash.
+
+In the terminal, run this command: chsh -s /bin/bash
+Reboot the system
+Open a terminal and run these commands to make /bin/sh link to /bin/bash:
+sudo rm /bin/sh
+sudo ln -s /bin/bash /bin/sh
+
+Step 4:
+source ~/petalinux/petainstalldir/settings.sh
+
+To avoid running the above command every time a new cli is opened, copy the above command in bashrc file at the end. 
+nano ~/.bashrc
+
+This will however, run this command evertime a new cli is opened and could be annoying at times when petalinux is not being used. 
+
+Check the working evnironment by typing
+echo $PETALINUX
+
