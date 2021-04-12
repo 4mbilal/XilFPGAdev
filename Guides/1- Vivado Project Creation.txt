@@ -8,18 +8,20 @@
 
 5- Validate design by right clicking on ‘system’ in block design pane. Validation successful message will appear. There should be no errors. 
 
-6- Go to sources tab in Block Design Window, right click on ‘system.bd’ and create HDL wrapper. Choose the ‘copy’ option so that it could be manually edited later on for further customization.
+6- Go to sources tab in Block Design Window, right click on ‘system.bd’ in 'Design Sources' and create HDL wrapper. Choose the ‘copy’ option so that it could be manually edited later on for further customization.
 
-7- Generate ‘bitstream’. This should take around 5 minutes. This minimal system takes only 1% LUT resources. Clocking requirements are met for 100 MHz system clock. Worst Negative Slack is +3.5 ns.
+7- Minimal system is ready for testing. If VDMA is required, then follow the steps at the end before continuing to the next step. 
 
-8- Click File and then 'Export'. Select 'Export Hardware'. Select 'Include Bitstream'. Click 'Next' with default paths and names. Exported hardware file 'system_wrapper.xsa' will be generated at the default project path. 
+8- Generate ‘bitstream’. This should take around 5 minutes. This minimal system takes only 1% LUT resources. Clocking requirements are met for 100 MHz system clock. Worst Negative Slack is +3.5 ns.
+
+9- Click File and then 'Export'. Select 'Export Hardware'. Select 'Include Bitstream'. Click 'Next' with default paths and names. Exported hardware file 'system_wrapper.xsa' will be generated at the default project path. 
 
 --------------------------------------------------------------------------------------------------
 Further steps to include VDMA.
 
-1- Add VDMA IP core. Frame Buffer = 1. Memory Map Data Width = 32. Enable Write Channel (Auto Mode). Stream Data Width = 32 (4 Bytes per pixel-RGBA). This option depends on the IP core. Matlab Vision HDL Coder IP uses 4 bytes by default. 3 Bytes per pixel is also not suitable for aligned memory accesses. In advanced tab, turn off Fsync option (Free running).
+1- Add VDMA IP core. Frame Buffer = 1. Memory Map Data Width = 32. Enable Write Channel (32-bit). Stream Data Width = 32 (4 Bytes per pixel-RGBA). This option depends on the IP core. Matlab Vision HDL Coder IP uses 4 bytes by default. 3 Bytes per pixel is also not suitable for aligned memory accesses and leads to significant increase in resources (warning is displayed). In advanced tab, turn off Fsync option (Free running).
 
-2- Enable “High performance AXI interface” HP0 with 64-bit (or 32??) in Zynq7 Processing System.
+2- Enable “High performance AXI interface” HP0 with 32-bit in Zynq7 Processing System.
 
 3- Run Block Automation to automatically connect various reset, clock and AXI interface signals. 
 
@@ -31,4 +33,4 @@ Further steps to include VDMA.
 
 7- Most of the signals are automatically connected by Block Automation as discussed above. Check if any signal is left unconnected. 
 
-
+8- To add IPs, create a folder 'CustomIPs' in the main project folder and add this to 'IP Catalog' > Right click > Add repository. 
