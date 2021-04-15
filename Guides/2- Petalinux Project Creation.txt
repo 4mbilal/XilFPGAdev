@@ -1,6 +1,6 @@
-1- petalinux-create --type project --template zynq --name ZedMinSysLin
+1- petalinux-create --type project --template zynq --name ZedMiniSysLin
 
-2- cd ZedMinSysLin
+2- cd ZedMiniSysLin
 
 3- For this step use the path to the folder where xsa file exported from Vivado project is located. E.g system_wrapper.xsa file in petalinux/projects folder
 	petalinux-config --get-hw-description=~/petalinux/projects/
@@ -16,7 +16,7 @@
 
 	kernel features -> Maximum zone order (modify from 11 to 15) - Related to contigous memory allocation. Required only for DPU but should help in other scenarios as well
 	Add device drivers for usb webcam etc.
-		Device Drivers->Multimedia support->Media USB Adapters->USB Video Class (UVC)
+		Device Drivers->Multimedia support->Media USB Adapters->USB Video Class (UVC) (Enable by pressing spacebar. Opions are empty, * and M)
 		Device Drivers->Multimedia support->Cameras/video grabbers support’
 		Device Drivers->Multimedia support->V4L platform devices
 	
@@ -96,7 +96,7 @@
 13- Use SSH through Ethernet. Check IP first using UART console and ifconfig. Or through router webpage.
 	ssh -X root@192.168.1.102
 	This starts ssh session with X11 forwarding and allows images to be displayed on the host PC. Good for Linux systems without display. 
-	ssh -X -C root@192.168.1.102	- with compression. useful for slower routers
+	ssh -X -C root@192.168.1.100	- with compression. useful for slower routers
 	
 
 14- Compile the test OpenCV/GPIO example 'hello_zed'. cd to this folder and modify the cpp file to test GPIO and OpenCV functions separately and in combination. Use vim to edit. Type 'make' to compile. Connect a webcam on USB otg and run the executable. X11 forwarding will display the live frames on host PC. 

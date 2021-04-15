@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date             : Tue Apr 13 01:45:25 2021
+| Date             : Tue Apr 13 20:21:06 2021
 | Host             : WINDOWS-8GTKTJU running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.019 |        3 |       --- |             --- |
-| Slice Logic              |     0.004 |    10318 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     3221 |     53200 |            6.05 |
+| Slice Logic              |     0.005 |    10406 |       --- |             --- |
+|   LUT as Logic           |     0.004 |     3298 |     53200 |            6.20 |
 |   CARRY4                 |    <0.001 |      176 |     13300 |            1.32 |
-|   Register               |    <0.001 |     4987 |    106400 |            4.69 |
+|   Register               |    <0.001 |     5000 |    106400 |            4.70 |
 |   LUT as Distributed RAM |    <0.001 |       64 |     17400 |            0.37 |
 |   LUT as Shift Register  |    <0.001 |      215 |     17400 |            1.24 |
 |   Others                 |     0.000 |      563 |       --- |             --- |
-| Signals                  |     0.005 |     7276 |       --- |             --- |
+| Signals                  |     0.006 |     7357 |       --- |             --- |
 | Block RAM                |    <0.001 |      1.5 |       140 |            1.07 |
 | DSPs                     |     0.001 |        3 |       220 |            1.36 |
 | I/O                      |    <0.001 |       21 |       200 |           10.50 |
@@ -154,16 +154,16 @@ Table of Contents
 +--------------------------+-----------+
 | system_wrapper           |     1.563 |
 |   system_i               |     1.562 |
-|     RGB2Gray_ip_0        |     0.007 |
-|       inst               |     0.007 |
-|     axi_mem_intercon     |     0.003 |
+|     RGB2Gray_ip_0        |     0.008 |
+|       inst               |     0.008 |
+|     axi_mem_intercon     |     0.002 |
 |       m00_couplers       |     0.001 |
 |       xbar               |     0.001 |
-|     axi_vdma_0           |     0.015 |
-|       U0                 |     0.015 |
+|     axi_vdma_0           |     0.014 |
+|       U0                 |     0.014 |
 |     processing_system7_0 |     1.532 |
 |       inst               |     1.532 |
-|     ps7_0_axi_periph     |     0.005 |
+|     ps7_0_axi_periph     |     0.004 |
 |       s00_couplers       |     0.004 |
 +--------------------------+-----------+
 

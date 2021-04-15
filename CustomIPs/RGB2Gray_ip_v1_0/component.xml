@@ -369,7 +369,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8b2bb19b</spirit:value>
+            <spirit:value>14930b64</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -385,7 +385,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>8b2bb19b</spirit:value>
+            <spirit:value>14930b64</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -991,7 +991,7 @@
       <spirit:file>
         <spirit:name>hdl/verilog/RGB2Gray_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_57e10578</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_27ded67a</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1158,14 +1158,14 @@
       </xilinx:taxonomies>
       <xilinx:displayName>RGB2Gray_ip</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2104130050</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-04-12T21:52:38Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2104132009</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-04-13T17:10:02Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="47455bef"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="fa7bbd03"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2f71500c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="72e26cc4"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="4e3cc5c3"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="496f74ca"/>
     </xilinx:packagingInfo>

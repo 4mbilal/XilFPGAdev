@@ -100,7 +100,7 @@ thead.reportTableHeader {
 <tr>
 <td class="distinctCellColor">Model version
 </td>
-<td class="summaryTableSndColOddRow">4.2
+<td class="summaryTableSndColOddRow">4.3
 </td>
 </tr>
 <tr>
@@ -112,7 +112,7 @@ thead.reportTableHeader {
 <tr>
 <td class="distinctCellColor">IP core generated on
 </td>
-<td class="summaryTableSndColOddRow">13-Apr-2021 00:50:10
+<td class="summaryTableSndColOddRow">13-Apr-2021 20:09:12
 </td>
 </tr>
 <tr>
@@ -281,13 +281,13 @@ The following AXI4-Lite bus accessible registers were generated for this IP core
 </td>
 <td>0x18
 </td>
-<td>contains unique IP timestamp (yymmddHHMM): 2104130050
+<td>contains unique IP timestamp (yymmddHHMM): 2104132009
 </td>
 </tr>
 </tbody>
 </table>
 <br/>
-The AXI4 slave write register readback is OFF for the IP core.
+The AXI4 slave write register readback is ON for the IP core.
 <br/>
 The register address mapping is also in the following C header file for you to use when programming the processor:
 <br/>
@@ -309,7 +309,7 @@ For example, to reset the IP core, write 0x1 to the bit 0 of IPCore_Reset regist
 <br/><br/>
 The AXI4 Slave port to pipeline register ratio selected as 35 in task 3.2 for this model. The default delay to read AXI4 register is one clock cycle.
 Depending on the selected ratio and IO connected to AXI4 interface, register pipelining is introduced in the read logic of AXI4 registers.
-For your model AXI4 pipeline register ratio setting 35 is larger than all the readable AXI4 slave registers. Total readable AXI4 slave registers are 1, so no pipelining is added to the AXI4 register read back logic.
+For your model AXI4 pipeline register ratio setting 35 is larger than all the readable AXI4 slave registers. Total readable AXI4 slave registers are 6, so no pipelining is added to the AXI4 register read back logic.
 <br/><br/>
 <b>Processor/FPGA Synchronization</b>
 <br/><br/>

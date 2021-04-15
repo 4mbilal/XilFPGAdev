@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
--- Date        : Tue Apr 13 01:39:42 2021
+-- Date        : Tue Apr 13 20:15:20 2021
 -- Host        : WINDOWS-8GTKTJU running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_RGB2Gray_ip_0_0/system_RGB2Gray_ip_0_0_stub.vhdl
