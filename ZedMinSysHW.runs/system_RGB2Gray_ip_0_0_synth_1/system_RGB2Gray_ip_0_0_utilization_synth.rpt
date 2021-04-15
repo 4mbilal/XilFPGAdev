@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Tue Apr 13 01:39:42 2021
+| Date         : Tue Apr 13 20:15:20 2021
 | Host         : WINDOWS-8GTKTJU running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_RGB2Gray_ip_0_0_utilization_synth.rpt -pb system_RGB2Gray_ip_0_0_utilization_synth.pb
 | Design       : system_RGB2Gray_ip_0_0
@@ -30,13 +30,13 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs*                |  541 |     0 |     53200 |  1.02 |
-|   LUT as Logic             |  490 |     0 |     53200 |  0.92 |
+| Slice LUTs*                |  624 |     0 |     53200 |  1.17 |
+|   LUT as Logic             |  573 |     0 |     53200 |  1.08 |
 |   LUT as Memory            |   51 |     0 |     17400 |  0.29 |
 |     LUT as Distributed RAM |   48 |     0 |           |       |
 |     LUT as Shift Register  |    3 |     0 |           |       |
-| Slice Registers            |  785 |     0 |    106400 |  0.74 |
-|   Register as Flip Flop    |  785 |     0 |    106400 |  0.74 |
+| Slice Registers            |  798 |     0 |    106400 |  0.75 |
+|   Register as Flip Flop    |  798 |     0 |    106400 |  0.75 |
 |   Register as Latch        |    0 |     0 |    106400 |  0.00 |
 | F7 Muxes                   |    0 |     0 |     26600 |  0.00 |
 | F8 Muxes                   |    0 |     0 |     13300 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 19    |          Yes |           - |          Set |
-| 703   |          Yes |           - |        Reset |
+| 716   |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
 | 63    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
@@ -149,12 +149,12 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDCE     |  703 |        Flop & Latch |
-| LUT2     |  204 |                 LUT |
-| LUT4     |  166 |                 LUT |
-| LUT6     |  115 |                 LUT |
-| LUT5     |   98 |                 LUT |
-| LUT3     |   83 |                 LUT |
+| FDCE     |  716 |        Flop & Latch |
+| LUT6     |  200 |                 LUT |
+| LUT2     |  200 |                 LUT |
+| LUT4     |  150 |                 LUT |
+| LUT5     |   95 |                 LUT |
+| LUT3     |   95 |                 LUT |
 | RAMD32   |   68 |  Distributed Memory |
 | FDRE     |   63 |        Flop & Latch |
 | CARRY4   |   63 |          CarryLogic |

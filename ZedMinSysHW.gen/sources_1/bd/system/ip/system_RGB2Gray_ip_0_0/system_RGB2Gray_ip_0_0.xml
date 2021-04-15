@@ -995,11 +995,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 12 22:33:13 UTC 2021</spirit:value>
+            <spirit:value>Tue Apr 13 17:13:19 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ae54cfc</spirit:value>
+            <spirit:value>9:263462e8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1010,7 +1010,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ae54cfc</spirit:value>
+            <spirit:value>9:263462e8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1026,11 +1026,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 12 22:33:13 UTC 2021</spirit:value>
+            <spirit:value>Tue Apr 13 17:13:19 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ae54cfc</spirit:value>
+            <spirit:value>9:263462e8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1045,11 +1045,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 12 22:33:13 UTC 2021</spirit:value>
+            <spirit:value>Tue Apr 13 17:13:19 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2ef849ea</spirit:value>
+            <spirit:value>9:122967fe</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1065,11 +1065,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 12 22:33:13 UTC 2021</spirit:value>
+            <spirit:value>Tue Apr 13 17:13:19 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2ef849ea</spirit:value>
+            <spirit:value>9:122967fe</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1083,11 +1083,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 12 22:39:42 UTC 2021</spirit:value>
+            <spirit:value>Tue Apr 13 17:15:20 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1ae54cfc</spirit:value>
+            <spirit:value>9:263462e8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1577,91 +1577,91 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_SimpleDualPortRAM_generic.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_SimpleDualPortRAM_generic.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_SimpleDualPortRAM_singlebit.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_SimpleDualPortRAM_singlebit.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_adapter_in.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_adapter_in.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_adapter_in_module.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_adapter_in_module.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_addr_decoder.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_addr_decoder.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_axi4_stream_video_master.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_axi4_stream_video_master.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_axi4_stream_video_slave.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_axi4_stream_video_slave.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_axi_lite.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_axi_lite.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_axi_lite_module.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_axi_lite_module.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_dut.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_dut.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_data.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_data.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_data_OUT.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_data_OUT.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_eol.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_eol.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_eol_out.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_eol_out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_sof.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_sof.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_sof_out.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_sof_out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_reset_sync.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_reset_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_src_Color_Space_Converter.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_src_Color_Space_Converter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_src_RGB2Gray_HW.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_src_RGB2Gray_HW.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_src_RGB2INTENSITY.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_src_RGB2INTENSITY.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_src_RGB2Vector.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_src_RGB2Vector.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1676,112 +1676,112 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_SimpleDualPortRAM_generic.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_SimpleDualPortRAM_generic.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_SimpleDualPortRAM_singlebit.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_SimpleDualPortRAM_singlebit.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_adapter_in.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_adapter_in.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_adapter_in_module.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_adapter_in_module.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_addr_decoder.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_addr_decoder.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_axi4_stream_video_master.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_axi4_stream_video_master.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_axi4_stream_video_slave.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_axi4_stream_video_slave.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_axi_lite.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_axi_lite.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_axi_lite_module.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_axi_lite_module.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_dut.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_dut.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_data.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_data.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_data_OUT.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_data_OUT.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_eol.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_eol.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_eol_out.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_eol_out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_sof.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_sof.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_fifo_sof_out.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_fifo_sof_out.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_reset_sync.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_reset_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_src_Color_Space_Converter.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_src_Color_Space_Converter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_src_RGB2Gray_HW.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_src_RGB2Gray_HW.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_src_RGB2INTENSITY.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_src_RGB2INTENSITY.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip_src_RGB2Vector.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip_src_RGB2Vector.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/e2b7/hdl/verilog/RGB2Gray_ip.v</spirit:name>
+        <spirit:name>../../ipshared/5060/hdl/verilog/RGB2Gray_ip.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -1842,7 +1842,7 @@
     <xilinx:coreExtensions>
       <xilinx:displayName>RGB2Gray_ip</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2104130050</xilinx:coreRevision>
+      <xilinx:coreRevision>2104132009</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI4_LITE.ADDR_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXI4_LITE.ARUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
@@ -1918,7 +1918,7 @@
       <xilinx:xilinxVersion>2020.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="47455bef"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="fa7bbd03"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="2f71500c"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="72e26cc4"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="4e3cc5c3"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="496f74ca"/>
     </xilinx:packagingInfo>

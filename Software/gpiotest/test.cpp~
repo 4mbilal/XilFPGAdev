@@ -1,0 +1,131 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/mman.h>
+#include <fcntl.h>
+#include "opencv2/core/core.hpp"
+#include "opencv2/highgui/highgui.hpp"
+#include "opencv2/imgproc/imgproc.hpp"
+#include <opencv2/opencv.hpp>
+#include "iostream"
+using namespace cv;
+using namespace std;
+
+
+void GPIOtest();
+void OCVtest();
+
+int main()
+{
+	GPIOtest();
+	//OCVtest();
+}
+
+void GPIOtest(){
+	unsigned int LEDgpioAddr = 0x41200000;	//LEDs on a single channel GPIO
+	unsigned int PBgpioAddr = 0x41210000;   //Push Buttons (offset 0) and Switches (offset 8) connected to the dual channel GPIO
+	unsigned int SWgpioAddr = 0x41210008;   //Push Buttons (offset 0) and Switches (offset 8) connected to the dual channel GPIO
+	unsigned int LEDpage_addr, LEDpage_offset;
+	unsigned int SWpage_addr, SWpage_offset;
+	unsigned int PBpage_addr, PBpage_offset;
+	void *LEDptr;
+	void *SWptr;
+	void *PBptr;
+	unsigned int page_size=sysconf(_SC_PAGESIZE);
+
+	/* Open /dev/mem file */
+	int fd = open ("/dev/mem", O_RDWR);
+	if (fd < 1) {
+		printf("\n\n\tError opening GPIO!!!!");
+		return;
+	}
+
+	/* mmap the GPIO devices into memory */
+	LEDpage_addr = (LEDgpioAddr & (~(page_size-1)));
+	LEDpage_offset = LEDgpioAddr - LEDpage_addr;
+	LEDptr = mmap(NULL, page_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, LEDpage_addr);
+
+	SWpage_addr = (SWgpioAddr & (~(page_size-1)));
+	SWpage_offset = SWgpioAddr - SWpage_addr;
+	SWptr = mmap(NULL, page_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, SWpage_addr);
+
+	PBpage_addr = (PBgpioAddr & (~(page_size-1)));
+	PBpage_offset = PBgpioAddr - PBpage_addr;
+	PBptr = mmap(NULL, page_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, PBpage_addr);
+
+	int value_SW = 0;
+	int value_PB = 0;
+	int value = 0;
+
+	while(1){
+		value_SW = *((unsigned *)(SWptr + SWpage_offset));
+		value_PB = *((unsigned *)(PBptr + PBpage_offset));
+		value = value_SW | value_PB;
+		//printf("\n gpio value: %08x\n",value);
+		*((unsigned *)(LEDptr + LEDpage_offset)) = value;
+	}
+	
+	munmap(LEDptr, page_size);
+	munmap(SWptr, page_size);
+}
+
+
+void OCVtest(){
+	unsigned int SWgpioAddr = 0x41210008;   //Push Buttons (offset 0) and Switches (offset 8) connected to the dual channel GPIO
+	unsigned int SWpage_addr, SWpage_offset;
+	void *SWptr;
+	unsigned int page_size=sysconf(_SC_PAGESIZE);
+
+	/* Open /dev/mem file */
+	int fd = open ("/dev/mem", O_RDWR);
+	if (fd < 1) {
+		printf("\n\n\tError opening GPIO!!!!");
+		return;
+	}
+
+	/* mmap the GPIO devices into memory */
+	SWpage_addr = (SWgpioAddr & (~(page_size-1)));
+	SWpage_offset = SWgpioAddr - SWpage_addr;
+	SWptr = mmap(NULL, page_size, PROT_READ|PROT_WRITE, MAP_SHARED, fd, SWpage_addr);
+	int value = 0;
+
+	Mat frame_input, frame_gray;
+	namedWindow( "OCV Test Frame", CV_WINDOW_AUTOSIZE );  
+  	VideoCapture cap(0);
+
+	while(1){
+		value = *((unsigned *)(SWptr + SWpage_offset));
+		cap>>frame_input;
+		switch(value){
+			case 0: imshow("OCV Test Frame",frame_input);
+				break;
+			case 1: cvtColor(frame_input, frame_gray, CV_BGR2GRAY);
+				imshow("OCV Test Frame",frame_gray);
+				break;
+			case 2: cvtColor(frame_input, frame_gray, CV_BGR2GRAY);
+				Canny(frame_gray, frame_gray, 100, 200, 3);
+				imshow("OCV Test Frame",frame_gray);
+				break;
+		}
+		waitKey(1);	
+	}
+	
+}
+
+
+   
+   /// Find contours   
+   /*vector<vector<Point> > contours;
+   vector<Vec4i> hierarchy;
+   RNG rng(12345);
+   findContours( gray, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, Point(0, 0) );
+   /// Draw contours
+   Mat drawing = Mat::zeros( gray.size(), CV_8UC3 );
+   for( int i = 0; i< contours.size(); i++ )
+   {
+     Scalar color = Scalar( rng.uniform(0, 255), rng.uniform(0,255), rng.uniform(0,255) );
+     drawContours( drawing, contours, i, color, 2, 8, hierarchy, 0, Point() );
+     } */    
+ 
+   
+

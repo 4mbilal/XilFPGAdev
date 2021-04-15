@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1618266801">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1618334013">
   <File Type="PA-TCL" Name="system_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="system_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="system_wrapper_reports.tcl"/>
@@ -46,9 +46,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="system_axi_vdma_0_0"/>
@@ -57,8 +55,6 @@
   <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_rst_ps7_0_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_RGB2Gray_ip_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_1"/>
   <BlockFileSet Type="BlockSrcs" Name="system_xbar_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_RGB2Gray_ip_0_0"/>
 </GenRun>

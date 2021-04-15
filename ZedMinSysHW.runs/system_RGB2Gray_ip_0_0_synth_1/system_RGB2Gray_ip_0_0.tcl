@@ -91,7 +91,7 @@ set_property ip_output_repo d:/ZedMinSysHW/ZedMinSysHW.cache/ip [current_project
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/ip/system_RGB2Gray_ip_0_0/system_RGB2Gray_ip_0_0.xci
+read_ip -quiet D:/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/ip/system_RGB2Gray_ip_0_0/system_RGB2Gray_ip_0_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

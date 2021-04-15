@@ -48,11 +48,11 @@
 
 
 // IP VLNV: xilinx.com:ip:RGB2Gray_ip:1.0
-// IP Revision: 2104130050
+// IP Revision: 2104132009
 
 (* X_CORE_INFO = "RGB2Gray_ip,Vivado 2020.2" *)
 (* CHECK_LICENSE_TYPE = "system_RGB2Gray_ip_0_0,RGB2Gray_ip,{}" *)
-(* CORE_GENERATION_INFO = "system_RGB2Gray_ip_0_0,RGB2Gray_ip,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=RGB2Gray_ip,x_ipVersion=1.0,x_ipCoreRevision=2104130050,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
+(* CORE_GENERATION_INFO = "system_RGB2Gray_ip_0_0,RGB2Gray_ip,{x_ipProduct=Vivado 2020.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=RGB2Gray_ip,x_ipVersion=1.0,x_ipCoreRevision=2104132009,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED}" *)
 (* IP_DEFINITION_SOURCE = "package_project" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module system_RGB2Gray_ip_0_0 (

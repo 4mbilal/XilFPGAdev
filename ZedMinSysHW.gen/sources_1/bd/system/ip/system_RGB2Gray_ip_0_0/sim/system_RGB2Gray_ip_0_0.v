@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:RGB2Gray_ip:1.0
-// IP Revision: 2104130050
+// IP Revision: 2104132009
 
 `timescale 1ns/1ps
 
