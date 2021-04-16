@@ -5,10 +5,10 @@
   * VDMA - AXI-S for linking custom video processing IP cores
   * VGA - help requested from volunteers. please contact me at 4mbilal@gmail.com
 
-* Video processing IP cores using Simulink HDL Coder (High-level Synthesis tool)
+* Video processing IP cores using Matlab/Simulink HDL Coder (High-level Synthesis tool)
   * Birds-Eye View (Perspective Transformation) 
   * Image Segmentation using Online K-Means Algorithm
   * Contrast Stretching
 * Video processing IP cores (Hand-coded)
   * Fast FIR Filtering Circuit on FPGA
-* 
+
