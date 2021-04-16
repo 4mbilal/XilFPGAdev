@@ -1,0 +1,407 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 17 05:09:53 2021
+# Process ID: 1988
+# Current directory: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_ContrastS_ip_0_0_synth_1
+# Command line: vivado.exe -log system_ContrastS_ip_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_ContrastS_ip_0_0.tcl
+# Log file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_ContrastS_ip_0_0_synth_1/system_ContrastS_ip_0_0.vds
+# Journal file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_ContrastS_ip_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_ContrastS_ip_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/CustomIPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+Command: synth_design -top system_ContrastS_ip_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11728
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1003.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_ContrastS_ip_0_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_ContrastS_ip_0_0/synth/system_ContrastS_ip_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip.v:28]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_reset_sync' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_reset_sync.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_reset_sync' (1#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_reset_sync.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_axi_lite' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_axi_lite.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_addr_decoder' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_addr_decoder.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_addr_decoder' (2#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_addr_decoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_axi_lite_module' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_axi_lite_module.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_axi_lite_module' (3#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_axi_lite_module.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_axi_lite' (4#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_axi_lite.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_axi4_stream_video_slave' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_axi4_stream_video_slave.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_fifo_eol' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_eol.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_SimpleDualPortRAM_singlebit' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_SimpleDualPortRAM_singlebit.v:21]
+	Parameter AddrWidth bound to: 2 - type: integer 
+	Parameter DataWidth bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_SimpleDualPortRAM_singlebit' (5#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_SimpleDualPortRAM_singlebit.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_fifo_eol' (6#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_eol.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_fifo_sof' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_sof.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_fifo_sof' (7#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_sof.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_adapter_in' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_adapter_in.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_adapter_in_module' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_adapter_in_module.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_adapter_in_module' (8#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_adapter_in_module.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_adapter_in' (9#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_adapter_in.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_fifo_data' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_data.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_SimpleDualPortRAM_generic' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_SimpleDualPortRAM_generic.v:21]
+	Parameter AddrWidth bound to: 2 - type: integer 
+	Parameter DataWidth bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_SimpleDualPortRAM_generic' (10#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_SimpleDualPortRAM_generic.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_fifo_data' (11#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_data.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_axi4_stream_video_slave' (12#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_axi4_stream_video_slave.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_dut' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_dut.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_src_ContrastStretch_HW' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_ContrastStretch_HW.v:45]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_src_RGB2Vector' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_RGB2Vector.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_src_RGB2Vector' (13#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_RGB2Vector.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_src_ContrastStretching' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_ContrastStretching.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_src_Color_Space_Converter' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_Color_Space_Converter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_src_RGB2INTENSITY' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_RGB2INTENSITY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_src_RGB2INTENSITY' (14#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_RGB2INTENSITY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_src_Color_Space_Converter' (15#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_Color_Space_Converter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_src_MATLAB_Function' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_MATLAB_Function.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_src_MATLAB_Function' (16#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_MATLAB_Function.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_src_ContrastStretching' (17#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_ContrastStretching.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_src_ContrastStretch_HW' (18#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_src_ContrastStretch_HW.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_dut' (19#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_dut.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_axi4_stream_video_master' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_axi4_stream_video_master.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_fifo_data_OUT' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_data_OUT.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_fifo_data_OUT' (20#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_data_OUT.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_fifo_eol_out' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_eol_out.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_fifo_eol_out' (21#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_eol_out.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ContrastS_ip_fifo_sof_out' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_sof_out.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_fifo_sof_out' (22#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_fifo_sof_out.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip_axi4_stream_video_master' (23#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip_axi4_stream_video_master.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ContrastS_ip' (24#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ipshared/ac96/hdl/verilog/ContrastS_ip.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'system_ContrastS_ip_0_0' (25#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_ContrastS_ip_0_0/synth/system_ContrastS_ip_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1003.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1003.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1003.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1003.910 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1039.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 1039.258 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1039.258 ; gain = 35.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1039.258 ; gain = 35.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 1039.258 ; gain = 35.348
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'axi_lite_wstate_reg' in module 'ContrastS_ip_axi_lite_module'
+INFO: [Synth 8-802] inferred FSM for state register 'axi_lite_rstate_reg' in module 'ContrastS_ip_axi_lite_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                         00000000
+                 iSTATE0 |                                1 |                         00000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_lite_rstate_reg' using encoding 'sequential' in module 'ContrastS_ip_axi_lite_module'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                              001 |                         00000000
+                  iSTATE |                              010 |                         00000001
+                 iSTATE0 |                              100 |                         00000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'axi_lite_wstate_reg' using encoding 'one-hot' in module 'ContrastS_ip_axi_lite_module'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1039.258 ; gain = 35.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   25 Bit       Adders := 1     
+	   2 Input   21 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 6     
+	   3 Input    9 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 4     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 12    
+	   2 Input    2 Bit       Adders := 12    
++---Registers : 
+	               32 Bit    Registers := 14    
+	               26 Bit    Registers := 1     
+	               25 Bit    Registers := 2     
+	               24 Bit    Registers := 6     
+	               20 Bit    Registers := 2     
+	               16 Bit    Registers := 2     
+	               13 Bit    Registers := 10    
+	                8 Bit    Registers := 18    
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 18    
+	                1 Bit    Registers := 71    
++---RAMs : 
+	              128 Bit	(4 X 32 bit)          RAMs := 2     
+	                4 Bit	(4 X 1 bit)          RAMs := 4     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   2 Input   20 Bit        Muxes := 6     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 8     
+	   2 Input    8 Bit        Muxes := 13    
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 38    
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/multiOut3, operation Mode is: (A:0x1d2f)*B.
+DSP Report: operator u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/multiOut3 is absorbed into DSP u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/multiOut3.
+DSP Report: Generating DSP u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/multiOut2, operation Mode is: (A:0x9646)*B.
+DSP Report: operator u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/multiOut2 is absorbed into DSP u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/multiOut2.
+DSP Report: Generating DSP u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/multiOut1, operation Mode is: (A:0x4c8b)*B.
+DSP Report: operator u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/multiOut1 is absorbed into DSP u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/multiOut1.
+DSP Report: Generating DSP u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/Divide_out1, operation Mode is: A2*B.
+DSP Report: register u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/alpha1_D_Lookup_Table_out1_1_reg is absorbed into DSP u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/Divide_out1.
+DSP Report: operator u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/Divide_out1 is absorbed into DSP u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/Divide_out1.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1039.258 ; gain = 35.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping	Report
++------------------------------------+------------------------------------------------------------------------------------+---------------+----------------+
+|Module Name                         | RTL Object                                                                         | Depth x Width | Implemented As | 
++------------------------------------+------------------------------------------------------------------------------------+---------------+----------------+
+|ContrastS_ip_src_ContrastStretching | alpha1_D_Lookup_Table_1                                                            | 256x16        | LUT            | 
+|ContrastS_ip_dut                    | u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/alpha1_D_Lookup_Table_1 | 256x16        | LUT            | 
++------------------------------------+------------------------------------------------------------------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name             | RTL Object                                                                                                                                   | Inference | Size (Depth x Width) | Primitives    | 
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_slave_inst/u_ContrastS_ip_fifo_eol_inst/u_ContrastS_ip_fifo_eol_classic_ram/ram_reg                    | Implied   | 4 x 1                | RAM16X1D x 1	 | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_slave_inst/u_ContrastS_ip_fifo_sof_inst/u_ContrastS_ip_fifo_sof_classic_ram/ram_reg                    | Implied   | 4 x 1                | RAM16X1D x 1	 | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_slave_inst/u_ContrastS_ip_fifo_data_inst/u_ContrastS_ip_fifo_data_classic_ram/ram_reg                  | Implied   | 4 x 32               | RAM32M x 6	   | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_master_inst/u_ContrastS_ip_fifo_data_OUT_inst/u_ContrastS_ip_fifo_data_OUT_classic_ram_generic/ram_reg | Implied   | 4 x 32               | RAM32M x 6	   | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_master_inst/u_ContrastS_ip_fifo_eol_out_inst/u_ContrastS_ip_fifo_eol_out_classic_ram/ram_reg           | Implied   | 4 x 1                | RAM16X1D x 1	 | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_master_inst/u_ContrastS_ip_fifo_sof_out_inst/u_ContrastS_ip_fifo_sof_out_classic_ram_singlebit/ram_reg | Implied   | 4 x 1                | RAM16X1D x 1	 | 
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping	Report (see note below)
++------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                         | DSP Mapping  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|ContrastS_ip_src_RGB2INTENSITY      | (A:0x1d2f)*B | 8      | 13     | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ContrastS_ip_src_RGB2INTENSITY      | (A:0x9646)*B | 8      | 16     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ContrastS_ip_src_RGB2INTENSITY      | (A:0x4c8b)*B | 8      | 15     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|ContrastS_ip_src_ContrastStretching | A2*B         | 16     | 8      | -      | -      | 24     | 1    | 0    | -    | -    | -     | 0    | 0    | 
++------------------------------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1073.777 ; gain = 69.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1075.371 ; gain = 71.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|Module Name             | RTL Object                                                                                                                                   | Inference | Size (Depth x Width) | Primitives    | 
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_slave_inst/u_ContrastS_ip_fifo_eol_inst/u_ContrastS_ip_fifo_eol_classic_ram/ram_reg                    | Implied   | 4 x 1                | RAM16X1D x 1	 | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_slave_inst/u_ContrastS_ip_fifo_sof_inst/u_ContrastS_ip_fifo_sof_classic_ram/ram_reg                    | Implied   | 4 x 1                | RAM16X1D x 1	 | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_slave_inst/u_ContrastS_ip_fifo_data_inst/u_ContrastS_ip_fifo_data_classic_ram/ram_reg                  | Implied   | 4 x 32               | RAM32M x 6	   | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_master_inst/u_ContrastS_ip_fifo_data_OUT_inst/u_ContrastS_ip_fifo_data_OUT_classic_ram_generic/ram_reg | Implied   | 4 x 32               | RAM32M x 6	   | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_master_inst/u_ContrastS_ip_fifo_eol_out_inst/u_ContrastS_ip_fifo_eol_out_classic_ram/ram_reg           | Implied   | 4 x 1                | RAM16X1D x 1	 | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_axi4_stream_video_master_inst/u_ContrastS_ip_fifo_sof_out_inst/u_ContrastS_ip_fifo_sof_out_classic_ram_singlebit/ram_reg | Implied   | 4 x 1                | RAM16X1D x 1	 | 
++------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1131.961 ; gain = 128.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1145.699 ; gain = 141.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1145.699 ; gain = 141.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1145.699 ; gain = 141.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1145.699 ; gain = 141.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1145.699 ; gain = 141.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1145.699 ; gain = 141.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name             | RTL Name                                                                                                                                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_dut_inst/u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/intdelay_reg_reg[6] | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_dut_inst/u_ContrastS_ip_src_ContrastStretch_HW/u_ContrastStretching/u_Color_Space_Converter/u_rgb2intensityNet_inst/vStart_reg_reg[7]   | 9      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|system_ContrastS_ip_0_0 | inst/u_ContrastS_ip_dut_inst/u_ContrastS_ip_src_ContrastStretch_HW/ContrastStretching_out2_hEnd_1_reg                                                       | 10     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    81|
+|2     |DSP48E1  |     4|
+|4     |LUT1     |    25|
+|5     |LUT2     |   243|
+|6     |LUT3     |   107|
+|7     |LUT4     |   230|
+|8     |LUT5     |   122|
+|9     |LUT6     |   217|
+|10    |RAM16X1D |     4|
+|11    |RAM32M   |    10|
+|12    |SRL16E   |     3|
+|13    |FDCE     |   774|
+|14    |FDPE     |    29|
+|15    |FDRE     |    63|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1145.699 ; gain = 141.789
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:47 . Memory (MB): peak = 1145.699 ; gain = 106.441
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1145.699 ; gain = 141.789
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1145.699 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 99 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1145.699 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 1145.699 ; gain = 141.789
+INFO: [Common 17-1381] The checkpoint 'D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_ContrastS_ip_0_0_synth_1/system_ContrastS_ip_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_ContrastS_ip_0_0, cache-ID = 30aaf58f556922a8
+INFO: [Coretcl 2-1174] Renamed 27 cell refs.
+INFO: [Common 17-1381] The checkpoint 'D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_ContrastS_ip_0_0_synth_1/system_ContrastS_ip_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_ContrastS_ip_0_0_utilization_synth.rpt -pb system_ContrastS_ip_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 17 05:11:01 2021...

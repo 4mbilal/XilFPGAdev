@@ -1,4 +1,0 @@
-RGB2GrayIP/RGB2Gray_HW/RGB2Vector --> RGB2Gray_ip_src_RGB2Vector
-RGB2GrayIP/RGB2Gray_HW/Color Space Converter/RGB2INTENSITY --> RGB2Gray_ip_src_RGB2INTENSITY
-RGB2GrayIP/RGB2Gray_HW/Color Space Converter --> RGB2Gray_ip_src_Color_Space_Converter
-RGB2GrayIP/RGB2Gray_HW --> RGB2Gray_ip_src_RGB2Gray_HW

@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/Work/ZedMinSysHW/ZedMinSysHW.runs/synth_1/system_wrapper.tcl"
+  variable script "D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/system_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,38 +77,38 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Work/ZedMinSysHW/ZedMinSysHW.cache/wt [current_project]
-set_property parent.project_path D:/Work/ZedMinSysHW/ZedMinSysHW.xpr [current_project]
+set_property webtalk.parent_dir D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.cache/wt [current_project]
+set_property parent.project_path D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_repo_paths d:/Work/ZedMinSysHW/CustomIPs [current_project]
+set_property ip_repo_paths d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/CustomIPs [current_project]
 update_ip_catalog
-set_property ip_output_repo d:/Work/ZedMinSysHW/ZedMinSysHW.cache/ip [current_project]
+set_property ip_output_repo d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib D:/Work/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/imports/hdl/system_wrapper.v
-add_files D:/Work/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/system.bd
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/system_ooc.xdc]
+read_verilog -library xil_defaultlib D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/imports/hdl/system_wrapper.v
+add_files D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/system.bd
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/system_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

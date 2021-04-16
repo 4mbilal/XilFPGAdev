@@ -31,8 +31,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xbar
 # IP: bd/system/ip/system_axi_mem_intercon_0/system_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axi_mem_intercon_0 || ORIG_REF_NAME==system_axi_mem_intercon_0} -quiet] -quiet
 
-# IP: bd/system/ip/system_Bilateral_ip_0_0/system_Bilateral_ip_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_Bilateral_ip_0_0 || ORIG_REF_NAME==system_Bilateral_ip_0_0} -quiet] -quiet
+# IP: bd/system/ip/system_ContrastS_ip_0_0/system_ContrastS_ip_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_ContrastS_ip_0_0 || ORIG_REF_NAME==system_ContrastS_ip_0_0} -quiet] -quiet
 
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet
@@ -40,4 +40,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_auto
 # IP: bd/system/ip/system_auto_pc_1/system_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_auto_pc_1 || ORIG_REF_NAME==system_auto_pc_1} -quiet] -quiet
 
-# XDC: d:/Work/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/system_ooc.xdc
+# XDC: d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/system_ooc.xdc

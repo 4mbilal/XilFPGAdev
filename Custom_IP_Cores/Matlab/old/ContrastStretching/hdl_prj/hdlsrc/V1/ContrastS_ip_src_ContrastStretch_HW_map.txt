@@ -1,6 +1,0 @@
-V1/ContrastStretch_HW/ContrastStretching/Color Space Converter/RGB2INTENSITY --> ContrastS_ip_src_RGB2INTENSITY
-V1/ContrastStretch_HW/ContrastStretching/Color Space Converter --> ContrastS_ip_src_Color_Space_Converter
-V1/ContrastStretch_HW/ContrastStretching/MATLAB Function --> ContrastS_ip_src_MATLAB_Function
-V1/ContrastStretch_HW/ContrastStretching --> ContrastS_ip_src_ContrastStretching
-V1/ContrastStretch_HW/RGB2Vector --> ContrastS_ip_src_RGB2Vector
-V1/ContrastStretch_HW --> ContrastS_ip_src_ContrastStretch_HW
