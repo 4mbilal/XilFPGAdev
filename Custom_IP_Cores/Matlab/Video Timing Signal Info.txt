@@ -1,0 +1,9 @@
+480p
+active pixels per line = 640
+active video lines = 480
+pixels per line = 800
+video lines = 525
+starting active line = 36
+endding active line = 515
+back porch (left margin) = 144
+front porch (right margin) = 16
