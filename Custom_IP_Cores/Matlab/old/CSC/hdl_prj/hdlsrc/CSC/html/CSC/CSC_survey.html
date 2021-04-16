@@ -1,0 +1,681 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="rtwreport.css" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>
+Code Generation Report for CSC
+</title>
+
+</head>
+<body bgcolor="#ffffff" link="0033CC" vlink="#666666" onload="try {if (top) {if (top.rtwPageOnLoad) top.rtwPageOnLoad('rtwIdSummaryPage'); else local_onload();}} catch(err) {};">
+<font SIZE="+2" COLOR="#000066">
+HDL Code Generation Report Summary for CSC
+</font>
+<br /><br /><br /><a name="Summary">
+<font size="+1" color="#000066">
+<b class="midprod">
+Summary
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Model
+</td>
+<td align="right" valign="top" style="border-style: none">
+<a href="matlab:Simulink.ID.hilite('CSC')" name="code2model" class="code2model">
+CSC
+</a>
+
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Model version
+</td>
+<td align="right" valign="top" style="border-style: none">
+1.736
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDL Coder version
+</td>
+<td align="right" valign="top" style="border-style: none">
+3.8
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDL code generated on
+</td>
+<td align="right" valign="top" style="border-style: none">
+2017-12-30 16:25:17
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDL code generated for
+</td>
+<td align="right" valign="top" style="border-style: none">
+<a href="matlab:Simulink.ID.hilite('CSC:360')" name="code2model" class="code2model">
+RGB2Y
+</a>
+
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Target Language
+</td>
+<td align="right" valign="top" style="border-style: none">
+Verilog
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+Target Directory
+</td>
+<td align="right" valign="top" style="border-style: none">
+hdl_prj\hdlsrc
+</td>
+
+</tr>
+
+</table>
+<br /><br /><a name="Non-default model properties">
+<font size="+1" color="#000066">
+<b class="midprod">
+Non-default model properties
+</b>
+
+</font>
+
+</a>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDLSubsystem
+</td>
+<td align="right" valign="top" style="border-style: none">
+CSC/RGB2Y
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDLSynthCmd
+</td>
+<td align="right" valign="top" style="border-style: none">
+add_file $src_dir/%s\n
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDLSynthFilePostfix
+</td>
+<td align="right" valign="top" style="border-style: none">
+_vivado.tcl
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDLSynthInit
+</td>
+<td align="right" valign="top" style="border-style: none">
+set src_dir [pwd]\nset prj_dir "vivado_prj"\nfile mkdir ../$prj_dir\ncd ../$prj_dir\ncreate_project %s.xpr\nset_property PART xc7vx485tffg1761-1 [current_project]\n
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+HDLSynthTerm
+</td>
+<td align="right" valign="top" style="border-style: none">
+launch_runs synth_1 -force\nwait_on_run synth_1\n
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+HDLSynthTool
+</td>
+<td align="right" valign="top" style="border-style: none">
+Vivado
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ModulePrefix
+</td>
+<td align="right" valign="top" style="border-style: none">
+RGB2Y_ip_src_
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+ReferenceDesign
+</td>
+<td align="right" valign="top" style="border-style: none">
+Default system with AXI4-Stream interface (Vivado 2016.2)
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ResetType
+</td>
+<td align="right" valign="top" style="border-style: none">
+Synchronous
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+SynthesisTool
+</td>
+<td align="right" valign="top" style="border-style: none">
+Xilinx Vivado
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+SynthesisToolChipFamily
+</td>
+<td align="right" valign="top" style="border-style: none">
+Zynq
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+SynthesisToolDeviceName
+</td>
+<td align="right" valign="top" style="border-style: none">
+xc7z020
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+SynthesisToolPackageName
+</td>
+<td align="right" valign="top" style="border-style: none">
+clg484
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+SynthesisToolSpeedValue
+</td>
+<td align="right" valign="top" style="border-style: none">
+-1
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+TargetDirectory
+</td>
+<td align="right" valign="top" style="border-style: none">
+hdl_prj\hdlsrc
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+TargetLanguage
+</td>
+<td align="right" valign="top" style="border-style: none">
+Verilog
+</td>
+
+</tr>
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+TargetPlatform
+</td>
+<td align="right" valign="top" style="border-style: none">
+ZedBoard
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+Workflow
+</td>
+<td align="right" valign="top" style="border-style: none">
+IP Core Generation
+</td>
+
+</tr>
+
+</table>
+<br /><br /><a name="Non-default block properties">
+<font size="+1" color="#000066">
+<b class="midprod">
+Non-default block properties
+</b>
+
+</font>
+
+</a>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:360')" name="code2model" class="code2model">
+RGB2Y
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture Module )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+ProcessorFPGASynchronization
+</td>
+<td align="right" valign="top" style="border-style: none">
+Free running
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:361')" name="code2model" class="code2model">
+RGB
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:387')" name="code2model" class="code2model">
+Video_Valid_in
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Valid
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:399')" name="code2model" class="code2model">
+Video_Ready_in
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Ready (optional)
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:402')" name="code2model" class="code2model">
+Video_TUSER0_in
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+TUSER (optional)
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:404')" name="code2model" class="code2model">
+Video_TLAST_in
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+TLAST (optional)
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:408')" name="code2model" class="code2model">
+Line buffer
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:411')" name="code2model" class="code2model">
+Line buffer1
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+UseRAM
+</td>
+<td align="right" valign="top" style="border-style: none">
+on
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:384')" name="code2model" class="code2model">
+YYY
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Data
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:388')" name="code2model" class="code2model">
+Video_Valid_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Valid
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:400')" name="code2model" class="code2model">
+Video_Ready_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Slave
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+Ready (optional)
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:403')" name="code2model" class="code2model">
+Video_TUSER0_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+TUSER (optional)
+</td>
+
+</tr>
+
+</table>
+<br /><br /><b>
+Block Parameters for:<a href="matlab:Simulink.ID.hilite('CSC:405')" name="code2model" class="code2model">
+Video_TLAST_out
+</a>
+
+</b>
+<b>
+<i>
+( Current Architecture default )
+</i>
+
+</b>
+<br /><br /><table width="100%" border="1">
+<tr style="background-color: #eeeeff">
+<td align="left" valign="top" style="border-style: none">
+IOInterface
+</td>
+<td align="right" valign="top" style="border-style: none">
+AXI4-Stream Master
+</td>
+
+</tr>
+<tr style="background-color: #ffffff">
+<td align="left" valign="top" style="border-style: none">
+IOInterfaceMapping
+</td>
+<td align="right" valign="top" style="border-style: none">
+TLAST (optional)
+</td>
+
+</tr>
+
+</table>
+<br /><br /><br />
+</body>
+
+</html>

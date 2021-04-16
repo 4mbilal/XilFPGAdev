@@ -1,0 +1,7 @@
+vlib work
+vlog  ContrastS_ip_src_RGB2INTENSITY.v
+vlog  ContrastS_ip_src_Color_Space_Converter.v
+vlog  ContrastS_ip_src_MATLAB_Function.v
+vlog  ContrastS_ip_src_ContrastStretching.v
+vlog  ContrastS_ip_src_RGB2Vector.v
+vlog  ContrastS_ip_src_ContrastStretch_HW.v

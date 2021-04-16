@@ -1,0 +1,132 @@
+1- petalinux-create --type project --template zynq --name ZedMiniSysLin
+
+2- cd ZedMiniSysLin
+
+3- For this step use the path to the folder where xsa file exported from Vivado project is located. E.g system_wrapper.xsa file in petalinux/projects folder
+	petalinux-config --get-hw-description=~/petalinux/projects/
+
+4- A config menu will open. Set 
+	DTG Settings -> MACHINE_NAME as ‘zedboard’
+
+	To allocate a section of main memory for DMA. 
+	DTG Settings -> Kernel Bootargs -> Set to manual and type the following
+	console=ttyPS0,115200 earlycon root=/dev/mmcblk0p2 rw rootwait mem=480M
+	“Image Packaging configuration →Root filesystem type→ EXT4 (SD/...)”
+
+	Save and exit configuration menu.
+
+5- Kernel Customization
+
+	petalinux-config -c kernel (Warning: takes some time when first loaded. Opens in a new command window.)
+
+	kernel features -> Maximum zone order (modify from 11 to 15) - Related to contigous memory allocation. Required only for DPU but should help in other scenarios as well
+	Add device drivers for usb webcam etc.
+		Device Drivers->Multimedia support->Media USB Adapters->USB Video Class (UVC) (Enable by pressing spacebar. Opions are empty, * and M. Select *)
+		Device Drivers->Multimedia support->Cameras/video grabbers support’
+		Device Drivers->Multimedia support->V4L platform devices
+	
+	Add device drivers for USB WiFi dongle. Not recommended though because USB is slow and using webcam + wifi on the same link will slow things down. 
+		Networking Support -> Wireless -> cfg80211 - wireless configuration API
+		Networking Support -> Wireless -> Generic IEEE 802.11 Networking Stack (mac80211)
+		Device Drivers -> Network device support -> Wireless LAN
+		Device Drivers -> Network device support -> Wireless LAN -> Ralink driver support
+		Device Drivers -> Network device support -> Wireless LAN -> Ralink driver support -> Ralink rt27xx/rt28xx/rt30xx
+
+	Save and exit
+
+6- Rootfs Customization
+
+	petalinux-config -c rootfs
+	Filesystem Packages ->
+		console -> utils -> pkgconfig
+		console -> utils -> vim
+	Petalinux Package Groups ->
+	petalinuxgroup-petalinux-opencv
+	petalinuxgroup-petalinux-opencv-dev
+	petalinuxgroup-petalinux-v4lutils
+	petalinuxgroup-petalinux-v4lutils-dev
+	petalinuxgroup-petalinux-self-hosted
+	petalinuxgroup-petalinux-self-hosted-dev
+	petalinuxgroup-petalinux-x11
+	matchbox (for display etc.)
+
+	Save and exit
+
+7- petalinux-build (This command will take some time the first time since it has to download a lot of things. This happens for every new project. There is a work-around related to sstatecache mentioned in UG1144)
+
+8- petalinux-package --boot --force --fsbl ./images/linux/zynq_fsbl.elf --fpga ./images/linux/system.bit --u-boot ./images/linux/u-boot.elf
+
+9- Prepare SD Card using either of the following two methods.
+	Use Gparted. Remove all partitions and then create new ones as follows. 
+	FAT32: Free Space preceeding = 4 MiB, New Size = 512 MiB, Label: "BOOT". Don't change other settings.
+	ext4:  Free Space preceeding = 0 MiB, Free Space following = 0 MiB, Label: "rootfs". Don't change other settings.
+
+	--OR--
+	
+	Unmount SD card.
+	sudo fdisk /dev/mmcblk0
+	press 'd' until all partitions are deleted.
+	Create new partition by pressing 'n'. press enter 3 times and then type +512M to set the size. press enter another time.
+	Create another partition by pressing 'n' and press enter multiple times. 
+	save changes by typing 'w'. 
+	Format
+	sudo mkfs.vfat -F 32 -n BOOT /dev/mmcblk0p1
+	sudo mkfs.ext4 -L rootfs /dev/mmcblk0p2
+	mount these partitions by clicking in UBUNTU 'Files' icon.
+
+10- Copy files to the SD card.
+
+	sudo tar xfvp images/linux/rootfs.tar.gz -C /media/mbilal/rootfs
+	sync
+	sudo chown root:root /media/mbilal/rootfs
+	sudo chown 755 /media/mbilal/rootfs
+	sudo cp images/linux/BOOT.BIN /media/mbilal/BOOT
+	sudo cp images/linux/image.ub /media/mbilal/BOOT
+	sudo cp images/linux/boot.scr /media/mbilal/BOOT
+	sync
+	Copy sample projects in the 'Software' folder to the home folder in rootfs inside root. 
+
+11- Boot Zedboard with the SD card. Use USB UART cable for the console. Check the correct jumper settings on FPGA for booting from SD card. The image may not boot in first attempt because the boot script has a bug with JTAG being the first option and MMC the second. Press any key on UART to go into u-boot menu. 
+	Reset all environment variables to their default: env default -f -a
+	Edit the variable: env edit boot_targets
+	Remove 'jtag' from this list so that mmc0 is the first option.
+	Save: saveenv
+	Reboot
+
+	Another brute force option is to change the 'bootcmd' variable to 'fatload mmc 0 0x1000000 image.ub && bootm 0x1000000'	
+	The above option is a hard-coded way to boot only from mmc and all other sources jtag, usb etc. are ignored. 
+
+	Kernel will panic. Go to u-boot menu by pressing any ket at the start. set the value of 'fdt_high' variable to 0x1E000000. saveenv. Reboot.
+
+
+12- login to the system using root as both username and password through UART console. Type ifconfig to note down the IP address. 
+
+13- Use SSH through Ethernet. Check IP first using UART console and ifconfig. Or through router webpage.
+	ssh -X root@192.168.1.102
+	This starts ssh session with X11 forwarding and allows images to be displayed on the host PC. Good for Linux systems without display. 
+	ssh -X -C root@192.168.1.100	- with compression. useful for slower routers
+	
+
+14- Compile the test OpenCV/GPIO example 'hello_zed'. cd to this folder and modify the cpp file to test GPIO and OpenCV functions separately and in combination. Use vim to edit. Type 'make' to compile. Connect a webcam on USB otg and run the executable. X11 forwarding will display the live frames on host PC. 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Further Tips & Troubleshooting
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+1- Board Support Package (BSP) 
+Petalinux project can also be created using a BSP. This method is a good way to get started and test the whole HW-SW end to end since a lot of things are already pre-configured and compiled for the selected board. But it's quite limiting in experience. cd to the desired directory. e.g. cd ~/petalinux/projects. Create the project using
+	petalinux-create -t project -s ~/petalinux/avnet-digilent-zedboard-v2020.2-final.bsp
+
+This project has all the ready-made software and hardware components. Hardware is though quite limited (only leds). ReadMe file inside the newly created project directory has some useful information. 
+
+2- If only the hardware changes without need for kernel to be changed, then only run petalinux-package with the updated bit file. E.g. system_wrapper.bit is the newly copied bit file from Vivado project. 
+petalinux-package --boot --force --fsbl ./images/linux/zynq_fsbl.elf --fpga ./images/linux/system_wrapper.bit --u-boot ./images/linux/u-boot.elf
+Copy only the BOOT.BIN file to SD card
+
+3-lsmod to display loaded drivers
+
+
+
+
+
+
