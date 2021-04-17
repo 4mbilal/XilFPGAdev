@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1.tcl"
+  variable script "D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "system_xbar_1_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -79,20 +80,20 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/ZedMinSysHW/ZedMinSysHW.cache/wt [current_project]
-set_property parent.project_path D:/ZedMinSysHW/ZedMinSysHW.xpr [current_project]
+set_property webtalk.parent_dir D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.cache/wt [current_project]
+set_property parent.project_path D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
-set_property ip_repo_paths d:/ZedMinSysHW/CustomIPs [current_project]
+set_property ip_repo_paths d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/CustomIPs [current_project]
 update_ip_catalog
-set_property ip_output_repo d:/ZedMinSysHW/ZedMinSysHW.cache/ip [current_project]
+set_property ip_output_repo d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1.xci
-set_property used_in_implementation false [get_files -all d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
+read_ip -quiet D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1.xci
+set_property used_in_implementation false [get_files -all d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -108,7 +109,7 @@ set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 OPTRACE "Configure IP Cache" START { }
 
-set cached_ip [config_ip_cache -export -no_bom  -dir D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1 -new_name system_xbar_1 -ip [get_ips system_xbar_1]]
+set cached_ip [config_ip_cache -export -no_bom  -dir D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1 -new_name system_xbar_1 -ip [get_ips system_xbar_1]]
 
 OPTRACE "Configure IP Cache" END { }
 if { $cached_ip eq {} } {
@@ -163,32 +164,32 @@ create_report "system_xbar_1_synth_1_synth_report_utilization_0" "report_utiliza
 OPTRACE "synth reports" END { }
 
 if { [catch {
-  file copy -force D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1.dcp d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1.dcp
+  file copy -force D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1.dcp d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  write_verilog -force -mode synth_stub d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.v
+  write_verilog -force -mode synth_stub d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode synth_stub d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.vhdl
+  write_vhdl -force -mode synth_stub d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_verilog -force -mode funcsim d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_sim_netlist.v
+  write_verilog -force -mode funcsim d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  write_vhdl -force -mode funcsim d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_sim_netlist.vhdl
+  write_vhdl -force -mode funcsim d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
@@ -198,47 +199,47 @@ if { [catch {
 
 
 if { [catch {
-  file copy -force D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1.dcp d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1.dcp
+  file copy -force D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1.dcp d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1.dcp
 } _RESULT ] } { 
   send_msg_id runtcl-3 status "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
   error "ERROR: Unable to successfully create or copy the sub-design checkpoint file."
 }
 
 if { [catch {
-  file rename -force D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1_stub.v d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.v
+  file rename -force D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1_stub.v d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a Verilog synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1_stub.vhdl d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.vhdl
+  file rename -force D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1_stub.vhdl d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create a VHDL synthesis stub for the sub-design. This may lead to errors in top level synthesis of the design. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1_sim_netlist.v d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_sim_netlist.v
+  file rename -force D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1_sim_netlist.v d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_sim_netlist.v
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the Verilog functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 if { [catch {
-  file rename -force D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1_sim_netlist.vhdl d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_sim_netlist.vhdl
+  file rename -force D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_1_synth_1/system_xbar_1_sim_netlist.vhdl d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_sim_netlist.vhdl
 } _RESULT ] } { 
   puts "CRITICAL WARNING: Unable to successfully create the VHDL functional simulation sub-design file. Post-Synthesis Functional Simulation with this file may not be possible or may give incorrect results. Error reported: $_RESULT"
 }
 
 }; # end if cached_ip 
 
-if {[file isdir D:/ZedMinSysHW/ZedMinSysHW.ip_user_files/ip/system_xbar_1]} {
+if {[file isdir D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.ip_user_files/ip/system_xbar_1]} {
   catch { 
-    file copy -force d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.v D:/ZedMinSysHW/ZedMinSysHW.ip_user_files/ip/system_xbar_1
+    file copy -force d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.v D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.ip_user_files/ip/system_xbar_1
   }
 }
 
-if {[file isdir D:/ZedMinSysHW/ZedMinSysHW.ip_user_files/ip/system_xbar_1]} {
+if {[file isdir D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.ip_user_files/ip/system_xbar_1]} {
   catch { 
-    file copy -force d:/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.vhdl D:/ZedMinSysHW/ZedMinSysHW.ip_user_files/ip/system_xbar_1
+    file copy -force d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_stub.vhdl D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.ip_user_files/ip/system_xbar_1
   }
 }
 file delete __synthesis_is_running__

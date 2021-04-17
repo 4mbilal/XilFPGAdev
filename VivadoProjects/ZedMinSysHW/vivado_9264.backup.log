@@ -1,0 +1,191 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 17 05:05:53 2021
+# Process ID: 9264
+# Current directory: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7700 D:\Work\XilFPGAdev\VivadoProjects\ZedMinSysHW\ZedMinSysHW.xpr
+# Log file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/vivado.log
+# Journal file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Work/ZedMinSysHW' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/CustomIPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:11 . Memory (MB): peak = 1002.469 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/system.bd}
+Reading block design file <D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/system.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_1
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:Bilateral_ip:1.0 - Bilateral_ip_0
+Successfully read diagram <system> from block design file <D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:17 . Memory (MB): peak = 1002.469 ; gain = 0.000
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ContrastS_ip:1.0 ContrastS_ip_0
+endgroup
+set_property location {4 1122 125} [get_bd_cells ContrastS_ip_0]
+delete_bd_objs [get_bd_intf_nets ps7_0_axi_periph_M03_AXI] [get_bd_intf_nets Bilateral_ip_0_AXI4_Stream_Video_Master] [get_bd_intf_nets axi_vdma_0_M_AXIS_MM2S] [get_bd_cells Bilateral_ip_0]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/processing_system7_0/FCLK_CLK0 (100 MHz)} Clk_slave {Auto} Clk_xbar {/processing_system7_0/FCLK_CLK0 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/ContrastS_ip_0/AXI4_Lite} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins ContrastS_ip_0/AXI4_Lite]
+Slave segment '/ContrastS_ip_0/AXI4_Lite/reg0' is being assigned into address space '/processing_system7_0/Data' at <0x43C0_0000 [ 64K ]>.
+connect_bd_intf_net [get_bd_intf_pins ContrastS_ip_0/AXI4_Stream_Video_Master] [get_bd_intf_pins axi_vdma_0/S_AXIS_S2MM]
+connect_bd_net [get_bd_pins ContrastS_ip_0/IPCORE_CLK] [get_bd_pins axi_vdma_0/mm2s_frame_ptr_out]
+delete_bd_objs [get_bd_nets axi_vdma_0_mm2s_frame_ptr_out]
+connect_bd_intf_net [get_bd_intf_pins ContrastS_ip_0/AXI4_Stream_Video_Slave] [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (100 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins ContrastS_ip_0/IPCORE_CLK]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <D:\Work\XilFPGAdev\VivadoProjects\ZedMinSysHW\ZedMinSysHW.srcs\sources_1\bd\system\system.bd> 
+Wrote  : <D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(32) on '/axi_vdma_0' with propagated value(64). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(32) on '/axi_vdma_0' with propagated value(64). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(32) on '/axi_vdma_0' with propagated value(64). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(32) on '/axi_vdma_0' with propagated value(64). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(32) on '/axi_vdma_0' with propagated value(64). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(32) on '/axi_vdma_0' with propagated value(64). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(32) on '/axi_vdma_0' with propagated value(64). Command ignored
+Wrote  : <D:\Work\XilFPGAdev\VivadoProjects\ZedMinSysHW\ZedMinSysHW.srcs\sources_1\bd\system\system.bd> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_rid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to pin: '/axi_mem_intercon/m00_couplers/M_AXI_bid'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_AWID'(6) to pin: '/axi_mem_intercon/M00_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_ARID'(6) to pin: '/axi_mem_intercon/M00_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/processing_system7_0/S_AXI_HP0_WID'(6) to pin: '/axi_mem_intercon/M00_AXI_wid'(1) - Only lower order bits will be connected.
+VHDL Output written to : d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/sim/system.v
+VHDL Output written to : d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ContrastS_ip_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc .
+Exporting to file d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.hwdef
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_ContrastS_ip_0_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_0
+INFO: [IP_Flow 19-7066] Running IP cache check for IP system_auto_pc_1
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_0, cache-ID = 291821656b379a66; cache size = 41.397 MB.
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP system_auto_pc_1, cache-ID = 647613048fb08c86; cache size = 41.397 MB.
+[Sat Apr 17 05:09:50 2021] Launched system_ContrastS_ip_0_0_synth_1, synth_1...
+Run output will be captured here:
+system_ContrastS_ip_0_0_synth_1: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_ContrastS_ip_0_0_synth_1/runme.log
+synth_1: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/runme.log
+[Sat Apr 17 05:09:50 2021] Launched impl_1...
+Run output will be captured here: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:45 ; elapsed = 00:00:52 . Memory (MB): peak = 1275.922 ; gain = 193.121
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.427 . Memory (MB): peak = 1448.164 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 219 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2127.645 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2127.645 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2127.645 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 21 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 3 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 14 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:44 ; elapsed = 00:00:31 . Memory (MB): peak = 2261.383 ; gain = 985.461
+open_report: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 2343.629 ; gain = 82.246
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_ContrastS_ip_0_0/system_ContrastS_ip_0_0.dcp' for cell 'system_i/ContrastS_ip_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.dcp' for cell 'system_i/axi_gpio_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.dcp' for cell 'system_i/axi_gpio_1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.dcp' for cell 'system_i/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.dcp' for cell 'system_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.dcp' for cell 'system_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1.dcp' for cell 'system_i/axi_mem_intercon/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.dcp' for cell 'system_i/axi_mem_intercon/m00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_0/system_xbar_0.dcp' for cell 'system_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0.dcp' for cell 'system_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.458 . Memory (MB): peak = 2398.445 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 228 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'system_i/processing_system7_0/inst'
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc] for cell 'system_i/axi_gpio_0/U0'
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/axi_gpio_1/U0'
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc] for cell 'system_i/axi_gpio_1/U0'
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/axi_gpio_1/U0'
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc] for cell 'system_i/axi_gpio_1/U0'
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0_board.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_rst_ps7_0_100M_0/system_rst_ps7_0_100M_0.xdc] for cell 'system_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc] for cell 'system_i/axi_vdma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:68]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:72]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:76]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:80]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:84]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc:220]
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0.xdc] for cell 'system_i/axi_vdma_0/U0'
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc] for cell 'system_i/axi_vdma_0/U0'
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_axi_vdma_0_0/system_axi_vdma_0_0_clocks.xdc] for cell 'system_i/axi_vdma_0/U0'
+INFO: [Project 1-1715] 2 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2484.793 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 19 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 14 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:15 . Memory (MB): peak = 2552.020 ; gain = 179.617
+report_utilization -name utilization_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 17 05:25:36 2021...

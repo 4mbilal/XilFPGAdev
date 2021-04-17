@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 17 16:46:48 2021
+# Process ID: 8104
+# Current directory: D:/Work/XilFPGAdev/Custom_IP_Cores/SimulinkHDLCoder/Segmentation/hdl_prj/ipcore/Segmentat_ip_v1_0/prj_ip
+# Command line: vivado.exe -mode batch -notrace -source vivado_ip_package.tcl
+# Log file: D:/Work/XilFPGAdev/Custom_IP_Cores/SimulinkHDLCoder/Segmentation/hdl_prj/ipcore/Segmentat_ip_v1_0/prj_ip/vivado.log
+# Journal file: D:/Work/XilFPGAdev/Custom_IP_Cores/SimulinkHDLCoder/Segmentation/hdl_prj/ipcore/Segmentat_ip_v1_0/prj_ip\vivado.jou
+#-----------------------------------------------------------
+source vivado_ip_package.tcl -notrace
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/Work/XilFPGAdev/Custom_IP_Cores/SimulinkHDLCoder/Segmentation/hdl_prj/ipcore/Segmentat_ip_v1_0/prj_ip'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Work/XilFPGAdev/Custom_IP_Cores/SimulinkHDLCoder/Segmentation/hdl_prj/ipcore'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/Work/XilFPGAdev/Custom_IP_Cores/SimulinkHDLCoder/Segmentation/hdl_prj/ipcore' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/Work/XilFPGAdev/Custom_IP_Cores/SimulinkHDLCoder/Segmentation/hdl_prj/ipcore/Segmentat_ip_v1_0/prj_ip'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Stream_Video_Master' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Stream_Video_Slave' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Lite' of definition 'xilinx.com:interface:aximm:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Lite_ARESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IPCORE_RESETN' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'AXI4_Lite_ACLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'IPCORE_CLK' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'AXI4_Lite_ARESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IPCORE_RESETN': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'AXI4_Lite_ACLK': Added interface parameter 'ASSOCIATED_BUSIF' with value 'AXI4_Lite'.
+INFO: [IP_Flow 19-4728] Bus Interface 'AXI4_Lite_ACLK': Added interface parameter 'ASSOCIATED_RESET' with value 'AXI4_Lite_ARESETN'.
+INFO: [IP_Flow 19-4728] Bus Interface 'IPCORE_CLK': Added interface parameter 'ASSOCIATED_RESET' with value 'IPCORE_RESETN'.
+WARNING: [IP_Flow 19-3158] Bus Interface 'AXI4_Stream_Video_Master': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-3158] Bus Interface 'AXI4_Stream_Video_Slave': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-5661] Bus Interface 'IPCORE_CLK' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_MATLAB_Function.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_MATLAB_Function.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Clustering.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Clustering.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_SSE1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_SSE1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_SSE2.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_SSE2.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_SSE3.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_SSE3.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_SSE4.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_SSE4.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Comparisons.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Comparisons.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_RGB2YCbCrCore.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_RGB2YCbCrCore.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Color_Space_Converter.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Color_Space_Converter.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_YCbCr2RGBCore.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_YCbCr2RGBCore.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_YCBCR2RGB.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_YCBCR2RGB.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Color_Space_Converter1.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Color_Space_Converter1.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_K_Means.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_K_Means.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_RGB2Vector.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_RGB2Vector.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Segmentation_HW.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_src_Segmentation_HW.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_reset_sync.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_reset_sync.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_dut.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_dut.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_SimpleDualPortRAM_generic.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_SimpleDualPortRAM_generic.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_data_OUT.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_data_OUT.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_SimpleDualPortRAM_singlebit.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_SimpleDualPortRAM_singlebit.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_sof_out.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_sof_out.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_eol_out.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_eol_out.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_axi4_stream_video_master.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_axi4_stream_video_master.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_data.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_data.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_sof.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_sof.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_eol.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_fifo_eol.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_adapter_in_module.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_adapter_in_module.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_adapter_in.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_adapter_in.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_axi4_stream_video_slave.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_axi4_stream_video_slave.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_addr_decoder.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_addr_decoder.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_axi_lite_module.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_axi_lite_module.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_axi_lite.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip_axi_lite.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip.v" already exists in file group "xilinx_anylanguagesynthesis", cannot add it again.
+WARNING: [IP_Flow 19-1971] File named "hdl/verilog/Segmentat_ip.v" already exists in file group "xilinx_anylanguagebehavioralsimulation", cannot add it again.
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 17 16:47:06 2021...

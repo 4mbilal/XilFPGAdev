@@ -34,3 +34,5 @@ Further steps to include VDMA.
 7- Most of the signals are automatically connected by Block Automation as discussed above. Check if any signal is left unconnected. 
 
 8- To add IPs, create a folder 'CustomIPs' in the main project folder and add this to 'IP Catalog' > Right click > Add repository. 
+
+9- Some IP cores may not be able to run at default 100 MHz. Change PL closk from Zynq7 Processing System settings. 40 MHz is a reasonably high clock for real-time video processing. 
