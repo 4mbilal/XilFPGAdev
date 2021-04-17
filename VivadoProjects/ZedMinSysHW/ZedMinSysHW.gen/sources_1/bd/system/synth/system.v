@@ -1,7 +1,7 @@
 //Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-//Date        : Fri Apr 16 01:24:27 2021
+//Date        : Sat Apr 17 05:09:43 2021
 //Host        : WINDOWS-K4KGMCR running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
@@ -1469,7 +1469,7 @@ module s01_couplers_imp_VQ497S
   assign s01_couplers_to_s01_couplers_WVALID = S_AXI_wvalid[0];
 endmodule
 
-(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=8,da_board_cnt=3,da_clkrst_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system.hwdef" *) 
+(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=20,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_board_cnt=3,da_clkrst_cnt=4,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system.hwdef" *) 
 module system
    (DDR_addr,
     DDR_ba,
@@ -1520,11 +1520,11 @@ module system
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 leds_8bits TRI_O" *) output [7:0]leds_8bits_tri_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 sws_8bits TRI_I" *) input [7:0]sws_8bits_tri_i;
 
-  wire [31:0]Bilateral_ip_0_AXI4_Stream_Video_Master_TDATA;
-  wire Bilateral_ip_0_AXI4_Stream_Video_Master_TLAST;
-  wire Bilateral_ip_0_AXI4_Stream_Video_Master_TREADY;
-  wire Bilateral_ip_0_AXI4_Stream_Video_Master_TUSER;
-  wire Bilateral_ip_0_AXI4_Stream_Video_Master_TVALID;
+  wire [31:0]ContrastS_ip_0_AXI4_Stream_Video_Master_TDATA;
+  wire ContrastS_ip_0_AXI4_Stream_Video_Master_TLAST;
+  wire ContrastS_ip_0_AXI4_Stream_Video_Master_TREADY;
+  wire ContrastS_ip_0_AXI4_Stream_Video_Master_TUSER;
+  wire ContrastS_ip_0_AXI4_Stream_Video_Master_TVALID;
   wire [7:0]axi_gpio_0_GPIO_TRI_O;
   wire [4:0]axi_gpio_1_GPIO2_TRI_I;
   wire [7:0]axi_gpio_1_GPIO_TRI_I;
@@ -1733,7 +1733,7 @@ module system
   assign axi_gpio_1_GPIO2_TRI_I = btns_5bits_tri_i[4:0];
   assign axi_gpio_1_GPIO_TRI_I = sws_8bits_tri_i[7:0];
   assign leds_8bits_tri_o[7:0] = axi_gpio_0_GPIO_TRI_O;
-  system_Bilateral_ip_0_0 Bilateral_ip_0
+  system_ContrastS_ip_0_0 ContrastS_ip_0
        (.AXI4_Lite_ACLK(processing_system7_0_FCLK_CLK0),
         .AXI4_Lite_ARADDR(ps7_0_axi_periph_M03_AXI_ARADDR[15:0]),
         .AXI4_Lite_ARESETN(rst_ps7_0_100M_peripheral_aresetn),
@@ -1753,11 +1753,11 @@ module system
         .AXI4_Lite_WREADY(ps7_0_axi_periph_M03_AXI_WREADY),
         .AXI4_Lite_WSTRB(ps7_0_axi_periph_M03_AXI_WSTRB),
         .AXI4_Lite_WVALID(ps7_0_axi_periph_M03_AXI_WVALID),
-        .AXI4_Stream_Video_Master_TDATA(Bilateral_ip_0_AXI4_Stream_Video_Master_TDATA),
-        .AXI4_Stream_Video_Master_TLAST(Bilateral_ip_0_AXI4_Stream_Video_Master_TLAST),
-        .AXI4_Stream_Video_Master_TREADY(Bilateral_ip_0_AXI4_Stream_Video_Master_TREADY),
-        .AXI4_Stream_Video_Master_TUSER(Bilateral_ip_0_AXI4_Stream_Video_Master_TUSER),
-        .AXI4_Stream_Video_Master_TVALID(Bilateral_ip_0_AXI4_Stream_Video_Master_TVALID),
+        .AXI4_Stream_Video_Master_TDATA(ContrastS_ip_0_AXI4_Stream_Video_Master_TDATA),
+        .AXI4_Stream_Video_Master_TLAST(ContrastS_ip_0_AXI4_Stream_Video_Master_TLAST),
+        .AXI4_Stream_Video_Master_TREADY(ContrastS_ip_0_AXI4_Stream_Video_Master_TREADY),
+        .AXI4_Stream_Video_Master_TUSER(ContrastS_ip_0_AXI4_Stream_Video_Master_TUSER),
+        .AXI4_Stream_Video_Master_TVALID(ContrastS_ip_0_AXI4_Stream_Video_Master_TVALID),
         .AXI4_Stream_Video_Slave_TDATA(axi_vdma_0_M_AXIS_MM2S_TDATA),
         .AXI4_Stream_Video_Slave_TLAST(axi_vdma_0_M_AXIS_MM2S_TLAST),
         .AXI4_Stream_Video_Slave_TREADY(axi_vdma_0_M_AXIS_MM2S_TREADY),
@@ -1941,12 +1941,12 @@ module system
         .s_axi_lite_wready(ps7_0_axi_periph_M02_AXI_WREADY),
         .s_axi_lite_wvalid(ps7_0_axi_periph_M02_AXI_WVALID),
         .s_axis_s2mm_aclk(processing_system7_0_FCLK_CLK0),
-        .s_axis_s2mm_tdata(Bilateral_ip_0_AXI4_Stream_Video_Master_TDATA),
+        .s_axis_s2mm_tdata(ContrastS_ip_0_AXI4_Stream_Video_Master_TDATA),
         .s_axis_s2mm_tkeep({1'b1,1'b1,1'b1,1'b1}),
-        .s_axis_s2mm_tlast(Bilateral_ip_0_AXI4_Stream_Video_Master_TLAST),
-        .s_axis_s2mm_tready(Bilateral_ip_0_AXI4_Stream_Video_Master_TREADY),
-        .s_axis_s2mm_tuser(Bilateral_ip_0_AXI4_Stream_Video_Master_TUSER),
-        .s_axis_s2mm_tvalid(Bilateral_ip_0_AXI4_Stream_Video_Master_TVALID));
+        .s_axis_s2mm_tlast(ContrastS_ip_0_AXI4_Stream_Video_Master_TLAST),
+        .s_axis_s2mm_tready(ContrastS_ip_0_AXI4_Stream_Video_Master_TREADY),
+        .s_axis_s2mm_tuser(ContrastS_ip_0_AXI4_Stream_Video_Master_TUSER),
+        .s_axis_s2mm_tvalid(ContrastS_ip_0_AXI4_Stream_Video_Master_TVALID));
   system_processing_system7_0_0 processing_system7_0
        (.DDR_Addr(DDR_addr[14:0]),
         .DDR_BankAddr(DDR_ba[2:0]),

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Work/ZedMinSysHW/ZedMinSysHW.runs/impl_1'
+HD_PWD='D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
