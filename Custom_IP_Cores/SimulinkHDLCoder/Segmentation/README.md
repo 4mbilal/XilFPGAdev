@@ -1,6 +1,10 @@
-# FPGA_ImageSegmentation_Online_KMeans
+# Image/Frame Segmentation using Online K-Means Algorithm
 
 * The Simulink model generates HDL files for K-means clustering IP core with AXI4 streaming interface.
+
+* Two versions are provided: K=4 and K=8
+
+* A pre-built bit file for testing on Zedboard SOC is avaialable in the Vivado project folder in the same repository
 
 * Please cite this work as follows
 
