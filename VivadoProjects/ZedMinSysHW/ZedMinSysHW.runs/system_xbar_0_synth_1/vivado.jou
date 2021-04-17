@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Tue Apr 13 01:37:07 2021
-# Process ID: 6448
-# Current directory: D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_0_synth_1
+# Start of session at: Sat Apr 17 17:09:26 2021
+# Process ID: 10524
+# Current directory: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_0_synth_1
 # Command line: vivado.exe -log system_xbar_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xbar_0.tcl
-# Log file: D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_0_synth_1/system_xbar_0.vds
-# Journal file: D:/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_0_synth_1\vivado.jou
+# Log file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_0_synth_1/system_xbar_0.vds
+# Journal file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_xbar_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_xbar_0.tcl -notrace
