@@ -3,7 +3,7 @@
 	"modules": {
 		"system": {
 			"proto_instances": {
-				"/Segmentat_ip_0/AXI4_Lite": {
+				"/DisparityV0_ip_0/AXI4_Lite": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
 						"ACLK": { "actual": "AXI4_Lite_ACLK"},
@@ -27,7 +27,7 @@
 						"WVALID": { "actual": "AXI4_Lite_WVALID"}
 					}
 				},
-				"/Segmentat_ip_0/AXI4_Stream_Video_Master": {
+				"/DisparityV0_ip_0/AXI4_Stream_Video_Master": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "IPCORE_CLK"},
@@ -39,7 +39,7 @@
 						"TVALID": { "actual": "AXI4_Stream_Video_Master_TVALID"}
 					}
 				},
-				"/Segmentat_ip_0/AXI4_Stream_Video_Slave": {
+				"/DisparityV0_ip_0/AXI4_Stream_Video_Slave": {
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "IPCORE_CLK"},

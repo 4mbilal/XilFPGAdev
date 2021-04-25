@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Apr 17 17:12:45 2021
-# Process ID: 11112
+# Start of session at: Sun Apr 25 08:39:18 2021
+# Process ID: 7452
 # Current directory: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1
 # Command line: vivado.exe -log system_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_wrapper.tcl
 # Log file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/system_wrapper.vds
@@ -20,29 +20,29 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 2012
+INFO: [Synth 8-7075] Helper process launched with PID 3652
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'system_wrapper' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/imports/hdl/system_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'system' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1473]
-INFO: [Synth 8-6157] synthesizing module 'system_Segmentat_ip_0_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_Segmentat_ip_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_Segmentat_ip_0_0' (1#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_Segmentat_ip_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'system_axi_gpio_0_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_axi_gpio_0_0' (2#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_axi_gpio_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'system_axi_gpio_1_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_axi_gpio_1_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_axi_gpio_1_0' (3#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_DisparityV0_ip_0_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_DisparityV0_ip_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_DisparityV0_ip_0_0' (1#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_DisparityV0_ip_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_gpio_0_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_gpio_0_0' (2#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_gpio_1_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_axi_gpio_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_gpio_1_0' (3#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_axi_gpio_1_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'system_axi_mem_intercon_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2182]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1TEAG88' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:144]
-INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_1' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_auto_pc_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_1' (4#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_1' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_1' (4#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_auto_pc_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1TEAG88' (5#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:144]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1P403ZT' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1243]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1P403ZT' (6#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1243]
 INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_VQ497S' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1347]
 INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_VQ497S' (7#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1347]
-INFO: [Synth 8-6157] synthesizing module 'system_xbar_1' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_xbar_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_xbar_1' (8#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_xbar_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_1' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_xbar_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_1' (8#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_xbar_1_stub.v:6]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'system_xbar_1' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2745]
 WARNING: [Synth 8-689] width (32) of port connection 's_axi_rdata' does not match port width (64) of module 'system_xbar_1' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2762]
 WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'system_xbar_1' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2763]
@@ -52,16 +52,16 @@ WARNING: [Synth 8-7071] port 's_axi_bid' of module 'system_xbar_1' is unconnecte
 WARNING: [Synth 8-7071] port 's_axi_rid' of module 'system_xbar_1' is unconnected for instance 'xbar' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2695]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'system_xbar_1' has 78 connections declared, but only 76 given [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2695]
 INFO: [Synth 8-6155] done synthesizing module 'system_axi_mem_intercon_0' (9#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2182]
-INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_0_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_axi_vdma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_0_0' (10#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_axi_vdma_0_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_axi_vdma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_vdma_0_0' (10#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_axi_vdma_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mm2s_frame_ptr_out' of module 'system_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1887]
 WARNING: [Synth 8-7071] port 's2mm_frame_ptr_out' of module 'system_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1887]
 WARNING: [Synth 8-7071] port 'm_axis_mm2s_tkeep' of module 'system_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1887]
 WARNING: [Synth 8-7071] port 'mm2s_introut' of module 'system_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1887]
 WARNING: [Synth 8-7071] port 's2mm_introut' of module 'system_axi_vdma_0_0' is unconnected for instance 'axi_vdma_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1887]
 WARNING: [Synth 8-7023] instance 'axi_vdma_0' of module 'system_axi_vdma_0_0' has 67 connections declared, but only 62 given [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1887]
-INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_0' (11#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_processing_system7_0_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_processing_system7_0_0' (11#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1950]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1950]
 WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'system_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1950]
@@ -82,17 +82,17 @@ INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_FKL2TE' (14#1) [
 INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_15QZ4LV' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:806]
 INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_15QZ4LV' (15#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:806]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_11SE3QO' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:938]
-INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_0' (16#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_auto_pc_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_auto_pc_0' (16#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_11SE3QO' (17#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:938]
-INFO: [Synth 8-6157] synthesizing module 'system_xbar_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_xbar_0' (18#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_xbar_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_xbar_0' (18#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_xbar_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'system_xbar_0' is unconnected for instance 'xbar' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:3528]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'system_xbar_0' is unconnected for instance 'xbar' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:3528]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'system_xbar_0' has 40 connections declared, but only 38 given [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:3528]
 INFO: [Synth 8-6155] done synthesizing module 'system_ps7_0_axi_periph_0' (19#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2774]
-INFO: [Synth 8-6157] synthesizing module 'system_rst_ps7_0_100M_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'system_rst_ps7_0_100M_0' (20#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-11112-WINDOWS-K4KGMCR/realtime/system_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'system_rst_ps7_0_100M_0' [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'system_rst_ps7_0_100M_0' (20#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/.Xil/Vivado-7452-WINDOWS-K4KGMCR/realtime/system_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2173]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2173]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'system_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:2173]
@@ -101,18 +101,18 @@ WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'system_rst_ps7_0_10
 INFO: [Synth 8-6155] done synthesizing module 'system' (21#1) [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/synth/system.v:1473]
 INFO: [Synth 8-6155] done synthesizing module 'system_wrapper' (22#1) [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.srcs/sources_1/imports/hdl/system_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.094 . Memory (MB): peak = 1002.051 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -135,26 +135,26 @@ Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/
 Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_xbar_1/system_xbar_1/system_xbar_1_in_context.xdc] for cell 'system_i/axi_mem_intercon/xbar'
 Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_1_in_context.xdc] for cell 'system_i/axi_mem_intercon/m00_couplers/auto_pc'
 Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1/system_auto_pc_1_in_context.xdc] for cell 'system_i/axi_mem_intercon/m00_couplers/auto_pc'
-Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_Segmentat_ip_0_0/system_Segmentat_ip_0_0/system_Segmentat_ip_0_0_in_context.xdc] for cell 'system_i/Segmentat_ip_0'
-Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_Segmentat_ip_0_0/system_Segmentat_ip_0_0/system_Segmentat_ip_0_0_in_context.xdc] for cell 'system_i/Segmentat_ip_0'
+Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_DisparityV0_ip_0_0/system_DisparityV0_ip_0_0/system_DisparityV0_ip_0_0_in_context.xdc] for cell 'system_i/DisparityV0_ip_0'
+Finished Parsing XDC File [d:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.gen/sources_1/bd/system/ip/system_DisparityV0_ip_0_0/system_DisparityV0_ip_0_0/system_DisparityV0_ip_0_0_in_context.xdc] for cell 'system_i/DisparityV0_ip_0'
 Parsing XDC File [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/dont_touch.xdc]
 Finished Parsing XDC File [D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1002.051 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -431,12 +431,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_vdma_0. (constraint 
 Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for system_i/axi_mem_intercon. (constraint file  auto generated constraint).
-Applied set_property KEEP_HIERARCHY = SOFT for system_i/Segmentat_ip_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for system_i/DisparityV0_ip_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -458,25 +458,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1004.934 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1002.051 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1027.488 ; gain = 22.555
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1030.293 ; gain = 28.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1028.086 ; gain = 23.152
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1030.891 ; gain = 28.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 1047.203 ; gain = 42.270
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1049.984 ; gain = 47.934
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -494,37 +494,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1052.938 ; gain = 48.004
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1054.785 ; gain = 52.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1052.938 ; gain = 48.004
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1054.785 ; gain = 52.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1052.938 ; gain = 48.004
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1054.785 ; gain = 52.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1052.938 ; gain = 48.004
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1054.785 ; gain = 52.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1052.938 ; gain = 48.004
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1054.785 ; gain = 52.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1052.938 ; gain = 48.004
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1054.785 ; gain = 52.734
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -538,7 +538,7 @@ Report BlackBoxes:
 |2     |system_auto_pc_1              |         1|
 |3     |system_xbar_0                 |         1|
 |4     |system_auto_pc_0              |         1|
-|5     |system_Segmentat_ip_0_0       |         1|
+|5     |system_DisparityV0_ip_0_0     |         1|
 |6     |system_axi_gpio_0_0           |         1|
 |7     |system_axi_gpio_1_0           |         1|
 |8     |system_axi_vdma_0_0           |         1|
@@ -550,7 +550,7 @@ Report Cell Usage:
 +------+----------------------------+------+
 |      |Cell                        |Count |
 +------+----------------------------+------+
-|1     |system_Segmentat_ip_0       |     1|
+|1     |system_DisparityV0_ip_0     |     1|
 |2     |system_auto_pc              |     2|
 |4     |system_axi_gpio_0           |     1|
 |5     |system_axi_gpio_1           |     1|
@@ -562,23 +562,23 @@ Report Cell Usage:
 |12    |OBUF                        |     8|
 +------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1052.938 ; gain = 48.004
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 1054.785 ; gain = 52.734
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:31 . Memory (MB): peak = 1052.938 ; gain = 48.004
-Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1052.938 ; gain = 48.004
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:41 . Memory (MB): peak = 1054.785 ; gain = 52.734
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 1054.785 ; gain = 52.734
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1064.988 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 1067.855 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1073.484 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1074.227 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 59 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 1073.484 ; gain = 68.551
+synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1074.227 ; gain = 72.176
 INFO: [Common 17-1381] The checkpoint 'D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/synth_1/system_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Apr 17 17:13:37 2021...
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 25 08:40:28 2021...

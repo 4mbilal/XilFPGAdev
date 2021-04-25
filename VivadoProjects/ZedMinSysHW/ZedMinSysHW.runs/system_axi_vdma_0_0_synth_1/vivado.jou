@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Apr 17 17:09:26 2021
-# Process ID: 10548
+# Start of session at: Mon Apr 19 18:36:04 2021
+# Process ID: 9564
 # Current directory: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_axi_vdma_0_0_synth_1
 # Command line: vivado.exe -log system_axi_vdma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_vdma_0_0.tcl
 # Log file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.runs/system_axi_vdma_0_0_synth_1/system_axi_vdma_0_0.vds

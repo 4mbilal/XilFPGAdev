@@ -105,6 +105,8 @@
 	ssh -X root@192.168.1.102
 	This starts ssh session with X11 forwarding and allows images to be displayed on the host PC. Good for Linux systems without display. 
 	ssh -X -C root@192.168.1.100	- with compression. useful for slower routers
+
+On Windows 10, install XMing and download putty. Run XLaunch to configure the display. Use default settings and save the config file. Run this file at startup. Configure Putty to use X11.
 	
 
 14- Compile the test OpenCV/GPIO example 'hello_zed'. cd to this folder and modify the cpp file to test GPIO and OpenCV functions separately and in combination. Use vim to edit. Type 'make' to compile. Connect a webcam on USB otg and run the executable. X11 forwarding will display the live frames on host PC. 
@@ -123,7 +125,10 @@ This project has all the ready-made software and hardware components. Hardware i
 petalinux-package --boot --force --fsbl ./images/linux/zynq_fsbl.elf --fpga ./images/linux/system_wrapper.bit --u-boot ./images/linux/u-boot.elf
 Copy only the BOOT.BIN file to SD card
 
-3-lsmod to display loaded drivers
+3- Alternative to above. Not working at the moment. Some extra steps are needed. 
+	cat system_wrapper.bit > /dev/xdevcfg
+
+4-lsmod to display loaded drivers
 
 
 
