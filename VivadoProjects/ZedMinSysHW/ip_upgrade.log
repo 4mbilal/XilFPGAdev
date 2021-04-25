@@ -1,6 +1,132 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sun Apr 25 06:17:12 2021
+| Host         : WINDOWS-K4KGMCR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_DIPfilte_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_DIPfilte_ip_0_0 (xilinx.com:ip:DIPfilte_ip:1.0) from (Rev. 2104241922) to (Rev. 2104250611)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Sat Apr 24 14:29:07 2021
+| Host         : WINDOWS-K4KGMCR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_Disparity_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_Disparity_ip_0_0 (xilinx.com:ip:Disparity_ip:1.0) from (Rev. 2104240324) to (Rev. 2104241426)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 19 19:48:26 2021
+| Host         : WINDOWS-K4KGMCR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_SGBMHDLAl_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_SGBMHDLAl_ip_0_0 (xilinx.com:ip:SGBMHDLAl_ip:1.0) from (Rev. 2104191830) to (Rev. 2104191946)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 19 18:33:47 2021
+| Host         : WINDOWS-K4KGMCR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_SGBMHDLAl_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_SGBMHDLAl_ip_0_0 (xilinx.com:ip:SGBMHDLAl_ip:1.0) from (Rev. 2104191613) to (Rev. 2104191830)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 19 16:18:43 2021
+| Host         : WINDOWS-K4KGMCR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_SGBMHDLAl_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_SGBMHDLAl_ip_0_0 (xilinx.com:ip:SGBMHDLAl_ip:1.0) from (Rev. 2104191551) to (Rev. 2104191613)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Mon Apr 19 16:07:21 2021
+| Host         : WINDOWS-K4KGMCR running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_SGBMHDLAl_ip_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_SGBMHDLAl_ip_0_0 (xilinx.com:ip:SGBMHDLAl_ip:1.0) from (Rev. 2104190622) to (Rev. 2104191551)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
 | Date         : Thu Apr 15 23:52:45 2021
 | Host         : WINDOWS-K4KGMCR running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

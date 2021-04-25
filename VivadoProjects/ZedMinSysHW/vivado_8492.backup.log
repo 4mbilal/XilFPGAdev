@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 25 07:14:34 2021
+# Process ID: 8492
+# Current directory: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7532 D:\Work\XilFPGAdev\VivadoProjects\ZedMinSysHW\ZedMinSysHW.xpr
+# Log file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/vivado.log
+# Journal file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/CustomIPs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:16 . Memory (MB): peak = 1001.785 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 25 07:15:39 2021...

@@ -31,8 +31,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_xbar
 # IP: bd/system/ip/system_axi_mem_intercon_0/system_axi_mem_intercon_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_axi_mem_intercon_0 || ORIG_REF_NAME==system_axi_mem_intercon_0} -quiet] -quiet
 
-# IP: bd/system/ip/system_Segmentat_ip_0_0/system_Segmentat_ip_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_Segmentat_ip_0_0 || ORIG_REF_NAME==system_Segmentat_ip_0_0} -quiet] -quiet
+# IP: bd/system/ip/system_DisparityV0_ip_0_0/system_DisparityV0_ip_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_DisparityV0_ip_0_0 || ORIG_REF_NAME==system_DisparityV0_ip_0_0} -quiet] -quiet
 
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0} -quiet] -quiet

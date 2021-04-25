@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Apr 19 18:32:29 2021
+# Process ID: 8560
+# Current directory: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9096 D:\Work\XilFPGAdev\VivadoProjects\ZedMinSysHW\ZedMinSysHW.xpr
+# Log file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/vivado.log
+# Journal file: D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Work/XilFPGAdev/VivadoProjects/ZedMinSysHW/ZedMinSysHW.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:ip:SGBMHDLAl_ip:1.0 [get_ips  system_SGBMHDLAl_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips system_SGBMHDLAl_ip_0_0] -no_script -sync -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+reset_run system_SGBMHDLAl_ip_0_0_synth_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:ip:SGBMHDLAl_ip:1.0 [get_ips  system_SGBMHDLAl_ip_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips system_SGBMHDLAl_ip_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
